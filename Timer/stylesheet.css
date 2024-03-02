@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Orbitron';
-    src: url('fonts/Orbitron-Bold.woff2') format('woff2'),
-        url('fonts/Orbitron-Bold.woff') format('woff');
+    src: url('font/Orbitron-ExtraBold.woff2') format('woff2'),
+        url('font/Orbitron-ExtraBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -9,26 +9,8 @@
 
 @font-face {
     font-family: 'Orbitron';
-    src: url('fonts/Orbitron-Regular.woff2') format('woff2'),
-        url('fonts/Orbitron-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Orbitron';
-    src: url('fonts/Orbitron-SemiBold.woff2') format('woff2'),
-        url('fonts/Orbitron-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Orbitron';
-    src: url('fonts/Orbitron-ExtraBold.woff2') format('woff2'),
-        url('fonts/Orbitron-ExtraBold.woff') format('woff');
+    src: url('font/Orbitron-Bold.woff2') format('woff2'),
+        url('font/Orbitron-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -36,8 +18,8 @@
 
 @font-face {
     font-family: 'Orbitron';
-    src: url('fonts/Orbitron-Black.woff2') format('woff2'),
-        url('fonts/Orbitron-Black.woff') format('woff');
+    src: url('font/Orbitron-Black.woff2') format('woff2'),
+        url('font/Orbitron-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -45,17 +27,8 @@
 
 @font-face {
     font-family: 'Orbitron';
-    src: url('fonts/Orbitron-Medium.woff2') format('woff2'),
-        url('fonts/Orbitron-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Orbitron';
-    src: url('fonts/Orbitron-Regular.woff2') format('woff2'),
-        url('fonts/Orbitron-Regular.woff') format('woff');
+    src: url('font/Orbitron-Regular.woff2') format('woff2'),
+        url('font/Orbitron-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -63,8 +36,8 @@
 
 @font-face {
     font-family: 'Orbitron';
-    src: url('fonts/Orbitron-Medium.woff2') format('woff2'),
-        url('fonts/Orbitron-Medium.woff') format('woff');
+    src: url('font/Orbitron-Medium.woff2') format('woff2'),
+        url('font/Orbitron-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -72,46 +45,46 @@
 
 @font-face {
     font-family: 'Orbitron';
-    src: url('fonts/Orbitron-Black.woff2') format('woff2'),
-        url('fonts/Orbitron-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Orbitron';
-    src: url('fonts/Orbitron-ExtraBold.woff2') format('woff2'),
-        url('fonts/Orbitron-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Orbitron';
-    src: url('fonts/Orbitron-Regular.woff2') format('woff2'),
-        url('fonts/Orbitron-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Orbitron';
-    src: url('fonts/Orbitron-Bold.woff2') format('woff2'),
-        url('fonts/Orbitron-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Orbitron';
-    src: url('fonts/Orbitron-SemiBold.woff2') format('woff2'),
-        url('fonts/Orbitron-SemiBold.woff') format('woff');
+    src: url('font/Orbitron-SemiBold.woff2') format('woff2'),
+        url('font/Orbitron-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('font/DS-Digital-Bold.woff2') format('woff2'),
+        url('font/DS-Digital-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('font/DS-Digital.woff2') format('woff2'),
+        url('font/DS-Digital.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('font/DS-Digital-Italic.woff2') format('woff2'),
+        url('font/DS-Digital-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('font/DS-Digital-BoldItalic.woff2') format('woff2'),
+        url('font/DS-Digital-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
     font-display: swap;
 }
 
