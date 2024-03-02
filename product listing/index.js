@@ -1,4 +1,8 @@
+
+
 let products=[];
+
+
 document.getElementById('main-data').innerHTML="Product Data"
 document.getElementById('a_modee').classList.add("add_mode")
 const gridUI=()=>{
@@ -119,9 +123,6 @@ const calproduct=(e)=>{
     document.getElementById('a_modee').classList.remove("edit_mode")
     document.getElementById('a_modee').classList.add("add_mode")
     document.getElementById('a_modee').innerHTML="Add"
-
-    
-
     let product={
         Title:Title,
         Img:Img,
