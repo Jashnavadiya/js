@@ -1,0 +1,35 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product Listing</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainn-body">
+        <div id="main-body">
+            <h1 id="main-data"></h1>
+            <form method="post" class="form" action="/products" id="card-info">
+                <input placeholder="name" name="name" id="name" type="text" required><br>
+                <input placeholder="img" name="img" id="img" type="url" required><br>
+                <input placeholder="price" name="price" id="price" type="number" required><br>
+                <input id="sub" type="submit" value="Add">
+            </form>
+        </div>
+        <div id="admin-data">
+            <h1>Admin Data</h1><br>
+            <div id="main-admin-data">
+                <span id="a_total">Total Products : 0</span><br>
+                <span id="a_mode">Current Mode : </span><span id="a_modee">ADD</span>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <h1 class="heading_p">Products:-</h1>
+    <div class="main-result"><div id="result"></div></div>
+</body>
+<script src="index.js"></script>
+</html>
