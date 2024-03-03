@@ -14,11 +14,11 @@ app.use(express.static('public'));
 
 var datas=[]
 
-app.get('/products',(req,res)=>{
+app.get('/product',(req,res)=>{
     res.sendFile(__dirname + '/public/index.html');
 
 })
-app.post('/products',function(req,res){
+app.post('/product',function(req,res){
     var name=req.body.name;
     var img=req.body.img;
     var price=req.body.price;
