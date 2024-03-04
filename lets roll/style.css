@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainn-body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#user-data {
+    border-radius: 11px;
+    background-color: aliceblue;
+    width: 40%;
+    font-size: 22px;
+    margin: 50px auto 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#main-user {
+    margin: 100px auto;
+    width: 50%;
+}
+
+#Bett {
+    padding: 10px;
+    border-radius: 11px;
+}
+
+#main-body {
+    width: 40%;
+    background-color: antiquewhite;
+    border-radius: 11px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 50px auto 0 auto;
+    padding: 15px;
+}
+
+#main-heading {
+    font-size: 20px;
+}
+
+#card-body {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+
+}
+
+#roll_btn {
+    padding: 10px;
+    width: 30%;
+    margin: auto;
+    border-radius: 7px;
+}
+
+#btns {
+    width: 100%;
+    text-align: center;
+}
+
+#main-img {
+    width: 40%;
+    border-radius: 17px;
+}
+@media (max-width:750px){
+    #main-body,#user-data{
+        width: 100%;
+    }
+}
