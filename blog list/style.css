@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.main-body {
+    width: 90%;
+    margin: auto;
+}
+
+.card-input {
+    margin: 50px auto;
+    border-radius: 11px;
+    padding: 10px 50px 20px 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+textarea {
+    resize: none;
+    width: 43%;
+    padding: 10px;
+}
+
+#heading {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px auto;
+}
+
+input[type="text"],
+input[type="url"] {
+    width: 43%;
+}
+
+.desc-i {
+    display: flex;
+    align-items: start;
+}
+
+.for-align {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input[type="submit"]{
+    padding: 10px;
+}
+#Edit_btn{
+    width: 100%;
+    padding: 5px;
+}
+
+#Hor-line {
+    margin: 30px auto;
+}
+
+.some_info,.total_info
+{
+    font-size: 25px;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+#grp_title{
+    font-size: 34px;
+    margin-bottom: 10px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#main-post{
+    width: 30%;
+    margin: 20px 10px;
+    padding: 20px 10px;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+
+}
+#maiiinp{
+    margin: auto;
+}
+.heart{
+    color: pink;
+}
+#mainposts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#btn_group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+#btn_like,#btn_del,input[type="submit"],#Edit_btn{
+    cursor: pointer;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);;
+}
+#btn_like:focus,#btn_del:focus,input[type="submit"]:focus,#Edit_btn:focus{
+    cursor: pointer;
+    transform: translateY(1px);
+    box-shadow: 0 0.5px 0.5px 0 rgba(0, 0, 0, 0.2), 0 0.5px 0.5px 0 rgba(0, 0, 0, 0.19);;
+}
+button{
+    padding:  7px 12px;
+    margin: 7px 0;
+    transition: all 0.3s;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+input,#Edit_btn{
+    padding: 10px;
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+textarea{
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+#s_dec{
+    white-space: inherit;
+
+}
+.main-info-post{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.total_info{
+    width: max-content;
+}
+@media(max-width:750px){
+    .card-input{
+        padding: 17px;
+        width: 90%;
+    }
+    label{
+        display: none;
+    }
+    input[type="text"],
+input[type="url"],textarea{
+    width: 100%;
+}
+    #main-post{
+        width: 100%;}
+}
+@media(max-width:1000px) and (min-width:750px){
+    label{
+        display: none;
+    }
+    .card-input{
+        padding: 17px;
+        width: 90%;
+    }
+    input[type="text"],
+input[type="url"],textarea{
+    width: 100%;
+}
+    #main-post{
+        width: 30%;}
+}
+@media(max-width:1200px) and (min-width:1000px){
+    .card-input{
+        width: 70%;
+    }
+    #main-post{
+        width: 17%;}
+}
+@media(max-width:1400px) and (min-width:1200px){
+    .card-input{
+        width: 70%;
+    }
+    #main-post{
+        width: 18%;}
+}
+@media(min-width:1400px){
+    .card-input{
+        width: 60%;
+    }
+    #main-post{
+        width: 18%;}
+}

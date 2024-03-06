@@ -62,13 +62,28 @@ button,select,option{
     width: 100%;
     text-align: center;
 }
-
+.dice{
+    transform-style: preserve-3d;
+    transform: rotateY(7deg) rotatex(7deg) ;
+}
+.dice-face{
+    transform: rotate 1s linear;
+}
 #main-img {
     width: 40%;
+    
     border-radius: 17px;
+    
+    
 }
+
 @media (max-width:750px){
     #main-body,#user-data{
         width: 100%;
+    }
+}
+@keyframes rotate{
+    0%{
+        
     }
 }
