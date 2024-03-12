@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 20px auto 0 auto;
+    border-radius: 7px;
+}
+
+.main-body {
+    width: 90%;
+    border-radius: 11px;
+    margin: 100px auto;
+}
+
+#main-form {
+    width: 40%;
+    margin: auto;
+}
+
+#ans {
+    font-size: 11px;
+    color: red;
+}
+
+#ans1 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+@media (max-width:991px){
+    #main-form{
+        width: 90%;
+    }
+}
