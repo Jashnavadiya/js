@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+    position: relative;
+    z-index: 0;
+}
+
+.main-popup {
+    display: inline-block;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.main-boddyyy {
+    width: 100%;
+}
+
+.main-body {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+
+}
+
+.card-input {
+    margin: auto;
+    border-radius: 11px;
+    padding: 10px 50px 20px 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+textarea {
+    resize: none;
+    width: 43%;
+    padding: 10px;
+}
+
+#heading {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px auto;
+}
+
+input[type="text"],
+input[type="url"] {
+    width: 43%;
+}
+
+.desc-i {
+    display: flex;
+    align-items: start;
+}
+
+.for-align {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input[type="submit"] {
+    padding: 10px;
+}
+
+#Edit_btn {
+    width: 100%;
+    padding: 5px;
+}
+
+#Hor-line {
+    margin: 30px auto;
+}
+
+.some_info,
+.total_info {
+    font-size: 25px;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+#grp_title {
+    font-size: 34px;
+    margin-bottom: 10px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#main-post {
+    width: 30%;
+    margin: 20px 10px;
+    padding: 20px 10px;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#maiiinp {
+    margin: auto;
+}
+
+.heart {
+    color: pink;
+}
+
+#mainposts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#btn_group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#btn_like,
+#Viewbutton,
+#btn_del,
+input[type="submit"],
+#Edit_btn {
+    cursor: pointer;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+    ;
+}
+
+#btn_like:focus,
+#btn_del:focus,
+#Viewbutton:focus,
+input[type="submit"]:focus,
+#Edit_btn:focus {
+    cursor: pointer;
+    transform: translateY(1px);
+    box-shadow: 0 0.5px 0.5px 0 rgba(0, 0, 0, 0.2), 0 0.5px 0.5px 0 rgba(0, 0, 0, 0.19);
+    ;
+}
+
+button {
+    padding: 7px 12px;
+    margin: 7px 0;
+    transition: all 0.3s;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+input,
+#Edit_btn {
+    padding: 10px;
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+
+textarea {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+    ;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+
+#s_dec {
+    white-space: inherit;
+    height: 50px;
+    overflow: auto;
+}
+
+.main-info-post {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.total_info {
+    width: max-content;
+}
+
+.fa-xmark {
+    margin: auto 20px;
+}
+
+#popup_cancel {
+    text-align: right;
+    color: white;
+}
+.popup-card{
+    width: 80%;
+    padding: 10px 20px;
+    background-color: rgb(242,243,244);
+    height: 89%;
+    margin: auto;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-popup-data{
+    height: 70%;
+    overflow: auto;
+}
+.popup-img{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+#popup-title{
+    display: block;
+}
+#popup-imgs{
+    width: 100%;
+    height: min-content;
+    border-radius: 7px;
+}
+.popup-extra-data{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.popup-like,.popup-view,.popup-comment{
+    background-color: aliceblue;
+    border-radius: 7px;
+    padding: 10px 30px;
+}
+.popup-data{
+width: 50%;
+height: 80%;
+margin: auto;
+}
+.like-popup{
+    position: fixed;
+    top: 0px; 
+    padding: 2% 3%;
+    width: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 11px;
+    transition: transform 0.5s;
+    transform: translateY(0px);
+    visibility: hidden;
+}
+.like-popup-show{
+    visibility: visible;
+    transform: translateY(10px);     
+}
+@media(max-width:750px) {
+    .card-input {
+        padding: 17px;
+        width: 90%;
+    }
+    .popup-card{
+        overflow: auto;
+        height: max-content;
+    }
+    .popup-card{
+        flex-wrap: wrap;
+    }
+    .popup-img,.popup-data{
+        width: 100%;
+    }
+    .popup-extra-data{
+        width: 70%;
+    }
+    label {
+        display: none;
+    }
+
+    input[type="text"],
+    input[type="url"],
+    textarea {
+        width: 100%;
+    }
+
+    #main-post {
+        width: 100%;
+    }
+}
+
+@media(max-width:1000px) and (min-width:750px) {
+    label {
+        display: none;
+    }
+    .popup-card{
+        overflow: auto;
+        height: max-content;
+        padding: 20px auto;
+    }
+    .popup-card{
+        flex-wrap: wrap;
+    }
+    .popup-img,.popup-data{
+        width: 100%;
+    }
+    .popup-extra-data{
+        width: 70%;
+    }
+    .card-input {
+        padding: 17px;
+        width: 90%;
+    }
+
+    input[type="text"],
+    input[type="url"],
+    textarea {
+        width: 100%;
+    }
+
+    #main-post {
+        width: 30%;
+    }
+}
+
+@media(max-width:1200px) and (min-width:1000px) {
+    .card-input {
+        width: 70%;
+    }
+
+    #main-post {
+        width: 17%;
+    }
+}
+
+@media(max-width:1400px) and (min-width:1200px) {
+    .card-input {
+        width: 70%;
+    }
+
+    #main-post {
+        width: 18%;
+    }
+}
+
+@media(min-width:1400px) {
+    .card-input {
+        width: 60%;
+    }
+
+    #main-post {
+        width: 18%;
+    }
+}

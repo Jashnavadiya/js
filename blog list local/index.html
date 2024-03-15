@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Bloging Website</title>
+</head>
+
+<body>
+    <div class="main-boddyyy">
+        <div class="main-body">
+            <div class="card-input">
+                <p id="heading">
+                    Post To Your Blog.
+                </p>
+                <form class="main-inputs">
+                    <div class="for-align"><label for="title-i">Enter post title</label><input id="title-i" type="text">
+                    </div><br>
+                    <div class="for-align"><label for="img-i">Enter Img Here</label><input id="img-i" type="url">
+                    </div><br>
+                    <div class="desc-i for-align">
+                        <label for="desc-i">Enter Content Here</label><textarea id="desc-i" type="text"
+                            rows="7"></textarea>
+                    </div><br>
+                    <div class="for-align"><input id="sub-i" type="submit" value="SUBMIT">
+                    </div>
+
+                </form>
+            </div>
+            <hr id="Hor-line">
+            <div class="posts">
+                <div class="main-info-post"><span class="some_info">
+                        Your Posts:
+                    </span>
+                    <span class="total_info"></span>
+                </div>
+                <div id="maiiinp">
+                    <div id="mainposts"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-popup">
+        <h1 id="popup_cancel"><i class="fa-solid fa-xmark"></i></h1>
+        <div class="popup-card">
+            <div class="popup-img"> 
+                <img src="" alt="" id="popup-imgs">
+            </div>
+            <div class="popup-data">
+                <h1 id="popup-title"></h1>
+                <div class="main-popup-data">
+                <p id="popup-dec"></p>
+                </div>
+                <div class="popup-extra-data">
+                    <div class="popup-like">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <p id="popup-like"></p>
+                    </div>
+                    <div class="popup-view">
+                        <i class="fa-solid fa-eye"></i>
+                        <p id="popup-view"></p>
+                    </div>
+                    <div class="popup-comment">
+                        <i class="fa-regular fa-comment"></i>
+                        <p id="popup-comment"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="like-popup">
+        <p id="popup-done-like">dsd</p>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
