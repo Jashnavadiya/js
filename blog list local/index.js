@@ -26,7 +26,17 @@ const uimaker = () => {
             if (S_LIKE_ICON.innerHTML != '<i class="fa-solid fa-heart"></i>') {
                 S_LIKE_ICON.innerHTML = '<i class="fa-solid fa-heart"></i>';
                 ele.LIKE=ele.LIKE+1;
-                document.querySelector('.like-popup').innerHTML=`You Like ${ele.TITLE} Post`
+                var post = {
+                    TITLE: ele.TITLE,
+                    IMG: ele.IMG,
+                    DEC: ele.DEC,
+                    LIKE:ele.LIKE,
+                    VIEW:ele.VIEW,
+                    COMMENT:ele.COMMENT
+                }
+                posts.splice(i, 1, post)
+                localStorage.setItem("INDEX", JSON.stringify(posts));
+                document.querySelector('.like-popup').innerHTML=`You add ${ele.TITLE} To Your Wishlist `
                 document.querySelector('.like-popup').classList.add('like-popup-show')
                 
                 setTimeout(()=>{
@@ -36,7 +46,7 @@ const uimaker = () => {
             }
             else {
                 S_LIKE_ICON.innerHTML = '<i class="fa-regular fa-heart"></i>';
-                document.querySelector('.like-popup').innerHTML=`You Unlike ${ele.TITLE} Post`
+                document.querySelector('.like-popup').innerHTML=`You Remove ${ele.TITLE} From Your Wishlist`
                 document.querySelector('.like-popup').classList.add('like-popup-show')
                 setTimeout(()=>{
                     document.querySelector('.like-popup').classList.remove('like-popup-show')
@@ -83,6 +93,7 @@ const uimaker = () => {
 
         v_btn.addEventListener('click',()=>{
             ele.VIEW++;
+            
         document.getElementById('popup-imgs').src=ele.IMG;
         document.getElementById('popup-title').innerHTML=ele.TITLE;
         document.getElementById('popup-dec').innerHTML=ele.DEC;
@@ -90,7 +101,16 @@ const uimaker = () => {
         document.getElementById('popup-view').innerHTML=ele.VIEW;
         document.getElementById('popup-comment').innerHTML=ele.COMMENT;
         
-            
+        var post = {
+            TITLE: ele.TITLE,
+            IMG: ele.IMG,
+            DEC: ele.DEC,
+            LIKE:ele.LIKE,
+            VIEW:ele.VIEW,
+            COMMENT:ele.COMMENT
+        }
+        posts.splice(i, 1, post)
+        localStorage.setItem("INDEX", JSON.stringify(posts));
         document.querySelector('.main-popup').classList.remove('hidden')
         })
 
@@ -119,8 +139,8 @@ const uimaker = () => {
             let TITLE = document.getElementById('title-i').value;
             let IMG = document.getElementById('img-i').value;
             let DEC = document.getElementById('desc-i').value;
-            let LIKE = 10;
-            let VIEW=70;
+            let LIKE;
+            let VIEW;
             let COMMENT=2;
             if (TITLE == "") {
                 alert("Enter Title First.");
@@ -163,15 +183,15 @@ const uimaker = () => {
 }
 const sum = () => {
     let n = posts.length;
-    document.querySelector('.total_info').innerHTML = `Total Posts Are : ${n}`;
+    document.querySelector('.total_info').innerHTML = `Total Products Are : ${n}`;
 }
 const cal = (e) => {
     e.preventDefault();
     let TITLE = document.getElementById('title-i').value;
     let IMG = document.getElementById('img-i').value;
     let DEC = document.getElementById('desc-i').value;
-    let LIKE = 10;
-    let VIEW=70;
+    let LIKE =2;
+    let VIEW=2;
     let COMMENT=2;
 
     if (TITLE == "") {
