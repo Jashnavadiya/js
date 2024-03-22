@@ -33,7 +33,7 @@ const calca=(e)=>{
             localStorage.setItem("Store",JSON.stringify(products))
         })
     reader.readAsDataURL(selectedFiles.files[0])
-     window.open("/pages/products.html")
+     window.open("../pages/products.html")
 }
 
 document.querySelector('.add-card').addEventListener('submit',calca)
