@@ -1,0 +1,39 @@
+.main-nav {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+
+}
+.navbar {
+    width: 95%;
+    margin: auto;
+}
+
+.nav-img-logo {
+    width: 70px;
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .show>.nav-link {
+    font-weight: 400;
+}
+.search-bar-header {
+    border: none;
+    border-bottom: 1px solid gray;
+    color: var(--bs-nav-link-color);
+}
+.cl6 {
+    background-color: transparent;
+}
+.middle6 {
+    width: 0px;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.outer6 {
+    width: 250px;
+    display: flex;
+    overflow: hidden
+}
+.shown-sbh {
+    width: 200px;
+}

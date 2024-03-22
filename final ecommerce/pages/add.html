@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/add.css">
+    <title>Sasta Bazar</title>
+</head>
+
+<body class="bg-body-tertiary">
+
+    <div class="main-nav">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid ">
+                <img class="navbar-brand nav-img-logo ms-4"
+                    src="/imges/sasta-bazar-high-resolution-logo-black-transparent.svg"></img>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-underline ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/pages/add.html">Add Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/signup.html">SignUp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/login.html">Login </a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+
+
+                        <div class="outer6">
+                            <div class="middle6">
+                                <div class="cl6">
+                                    <input class="search-bar-header bg-body-tertiary py-2 ms-3" type="search"
+                                        placeholder="Search" aria-label="Search">
+                                </div>
+                            </div>
+                            <span class="hi ps-3 py-2" type="submit"><i class="bi bi-search"></i></span>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="main-body">
+        <h2 id="main_header_of_add">Add Products</h2><br>
+        <div class="main-add-card">
+            <form method="post" enctype='multipart/form-data' class="add-card form-floating">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control " id="title" placeholder="helo" required>
+                    <label for="floatingInput">Name of product</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="number" class="form-control floatingPassword " id="price" placeholder="Password" required>
+                    <label for="floatingPassword">Price of Product</label>
+                  </div>
+                  <br>
+                  <div class="form-floating">
+                    <textarea class="form-control floatingTextarea2" placeholder="Leave a comment here" id="desc" style="height: 100px" required></textarea>
+                    <label for="floatingTextarea2">Description</label>
+                  </div><br>
+                  <div class="col-md">
+                    <div class="form-floating">
+                <select class="form-select floatingSelectGrid" id="cata" required>
+                    <option selected hidden value="0">Open this select menu</option>
+                    <option value="1">Technology</option>
+                    <option value="2">Fashion</option>
+                    <option value="3">Home appliance</option>
+                  </select><label for="floatingSelectGrid">category of product</label>
+                  </div></div>
+                  <br>
+                  
+                <div class="form-floating">
+                <input class="form-control floatingin4" id="img" type="file" multiple><label for="floatingin4" required>Images Of Product</label>
+                </div><br>
+                <input id="add_btn" type="submit" value="ADD PRODUCT">
+            </form>
+        </div>
+    </div>
+    <img src="" alt="" id="hi11">
+</body>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/add.js"></script>
+<script src="/js/header.js"></script>
+
+
+</html>

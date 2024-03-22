@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+i:hover{ -webkit-text-stroke: 0.3px; }
+.main-body{
+    width: 70%;
+    transform: translate(0,7%);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+input[type="text"],input[type="number"],.floatingTextarea2,.floatingSelectGrid,.floatingin4,h2{  
+    font-weight: 300;
+    background-color: #f8f9fa;
+}
+input[type="text"],input[type="number"],.floatingTextarea2,.floatingSelectGrid,.floatingin4{border:none;
+    border-radius: 0;
+    border-bottom: 0.5px solid gray;}
+
+    input[type="text"]:focus,input[type="number"]:focus,.floatingTextarea2:focus,.floatingSelectGrid:focus,.floatingin4:focus{
+        background-color: #f8f9fa;
+        outline: none;
+    }
+#input:focus{
+    background-color: #f8f9fa;
+    outline: none;
+}
+.form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after{
+    background-color: transparent;
+}
+.form-floating>.form-control, .form-floating>.form-control-plaintext{
+    padding: 0px 15px 0;
+}
+#img{
+    padding: 40px 15px;
+}
+#cata{
+   height: 50px;
+   padding: 20px 15px 0;
+}
+#add_btn{
+    padding:10px 20px ;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: none;
+     border-radius: 11px;
+}
+#add_btn:focus{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0.1px 0.4px;
+    
+}
