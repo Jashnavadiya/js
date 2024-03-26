@@ -32,25 +32,7 @@ const calca = (e) => {
     }
     
     users.push(userr);
-    if(12){
-        var valueArr = users.map(function(item) {
-            return item.un;
-          });
-          console.log(valueArr);
-          
-          var isDuplicate = valueArr.some(function(item, i) {
-            console.log(valueArr.indexOf(item));
-              console.log(i);
-              if(i!=0){
-                  return valueArr.indexOf(item)!==i;
-              }
-             
-          });
-          if(isDuplicate){
-            alert('This Product Name Already Exist')
-            return
-          }
-    }
+
     localStorage.setItem('Bro', JSON.stringify(users))
 
 
