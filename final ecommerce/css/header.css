@@ -20,6 +20,11 @@
     border-bottom: 1px solid gray;
     color: var(--bs-nav-link-color);
 }
+.search-bar-header:focus{
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
 .cl6 {
     background-color: transparent;
 }
@@ -36,4 +41,7 @@
 }
 .shown-sbh {
     width: 200px;
+}
+.hidden{
+    display: none;
 }

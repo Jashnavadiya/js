@@ -19,19 +19,38 @@
     })
 })()
 
-
-let users = JSON.parse(localStorage.setItem("Bro")) || [];
+let users = JSON.parse(localStorage.getItem("Bro")) || [];
 const calca = (e) => {
     e.preventDefault();
 
-    let user = {
+    let userr = {
         fn: document.getElementById('validationCustom01').value,
         ln: document.getElementById('validationCustom02').value,
         un: document.getElementById('validationCustomUsername').value,
         email: document.getElementById('validationCustom03').value,
         pass: document.getElementById('validationCustom04').value
     }
-    users.push('user');
+    
+    users.push(userr);
+    if(12){
+        var valueArr = users.map(function(item) {
+            return item.un;
+          });
+          console.log(valueArr);
+          
+          var isDuplicate = valueArr.some(function(item, i) {
+            console.log(valueArr.indexOf(item));
+              console.log(i);
+              if(i!=0){
+                  return valueArr.indexOf(item)!==i;
+              }
+             
+          });
+          if(isDuplicate){
+            alert('This Product Name Already Exist')
+            return
+          }
+    }
     localStorage.setItem('Bro', JSON.stringify(users))
 
 

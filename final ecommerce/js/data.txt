@@ -1,0 +1,29 @@
+{
+    "admin":
+        [
+        {
+            "email":"admin",
+            "pass":"admin@123"
+        },
+        {
+            "email":"jash",
+            "pass":"jash@123"
+        }
+    ],
+    "user":
+    [
+        {
+            "email":"user",
+            "pass":"user@123"
+        },
+        {
+            "email":"mitu",
+            "pass":"mitu@123"
+        },
+        {
+            "email":"tonystark",
+            "pass":"tonystark@123"
+        }
+    ]
+    
+}

@@ -22,3 +22,13 @@
     border-radius: 0;
     border-bottom: 0.5px solid gray;
 }
+#signup_btn{
+    padding:10px 20px ;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: none;
+     border-radius: 11px;
+}
+#signup_btn:focus{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0.1px 0.4px;
+}
