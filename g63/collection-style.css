@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed'
+}
+.connect-link{
+    color: #000;
+    text-decoration: none;
+}
+.new{
+    background-color: black;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 130px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Barlow Condensed",arial;
+    font-size: 16px;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background:red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+/*navbar end*/
+
+
+/*section start*/
+
+.breadcrumb-sec{
+    display: block;
+}
+
+.container{
+    width: 90%;
+    max-width: 1510px;
+    margin-left: 85px;
+    margin-right: 85px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.breadcrumb-grp{
+    padding: 20px 0 5px;
+}
+
+.breadcrumb-grp ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.breadcrumb-grp ul li{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12px;
+    color: #e11734;
+    font-family: "Barlow Condensed",arial;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.breadcrumb-grp ul li a {
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.breadcrumb-grp ul li>:after {
+    content: "";
+    width: 4px;
+    height: 7px;
+    background-image: url(image/breadcrumb-icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 18px;
+    margin-top: -5%;
+}
+
+/*section end*/
+
+/*COLLECTION START*/
+
+.collection{
+    padding: 30px 0;
+    width: 100%;
+}
+
+.topgrd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Barlow Condensed",arial;
+    padding: 0 0 30px;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 25px;
+}
+
+.h5{
+    margin-bottom: 0;
+}
+
+.total{
+    font-weight: 600;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.sortby-grp{
+    color: rgba(0,0,0,0.8);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filters-itm{
+    padding-left: 0;
+    display: flex;
+}
+
+.lbl{
+    color: rgba(0,0,0,0.8);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filtersbtn{
+    width: 49px;
+    height: 51px;
+    cursor: pointer;
+    padding: 15px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(image/filters-icon.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+}
+
+.sortby-itm{
+    color: rgba(0,0,0,0.8);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sortbybtn-select{
+    color: #000;
+    font-family: Barlow,arial;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: 0;
+    padding: 15px 25px;
+    padding-right: 85px;
+    border-radius: 10px;
+    margin: 0 0 0 6px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(image/selectinput-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 87% center;
+    background-size: 14px 6px;
+    border: 1px dotted #ccc;
+    outline: 0!important;
+}
+
+/*COLLECTION END*/
+
+/*middle start*/
+
+.middle{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%; 
+
+}
+.inner-middle{
+    padding: 20px 15px;
+}
+.upper{
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.img-car{
+    height: 40%;
+    border-radius: 15px;
+    width: 100%;
+}
+.lower{
+    background-color: #f4f4f4;
+    border-radius: 0px 0px 15px 15px;
+}
+h3{
+    padding: 15px;
+    font-family: "Barlow Condensed", arial;
+    letter-spacing: 1px;
+}
+h4{
+    padding-top: 7px;
+    font-family: "Barlow Condensed", arial;
+    padding-left: 15px;
+    letter-spacing: 1px;
+}
+p{
+    padding-left: 15px;
+    padding-top: 5px;
+    font-family: "Barlow Condensed", arial;
+    color: #565655;
+    letter-spacing: 1px;
+}
+.reg{
+    display: flex;
+    padding: 15px;
+    list-style: none;
+    margin: 0px;
+    align-items: end;
+    text-align: center;
+    justify-content: space-between;
+}
+.spann{
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    margin: 25px 0 0;
+    color: #000;
+    box-sizing: border-box;
+    text-align: left;
+    font-weight: 600;
+    align-items: center;
+    padding-top: 5px;
+    font-family: "Barlow Condensed", arial;
+}
+.li-inner{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    color: #000;
+    font-family: "Barlow Condensed", arial;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+}
+.info{
+    margin: 6px 0px;
+    color: #565655;
+    min-width: 33px;
+    font-family: "Barlow Condensed", arial;
+    font-weight: 600;
+    align-items: center;
+    line-height: 1.2;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.info-lower{
+    display: block;
+    margin: 6px 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/*middel end*/
+
+/*bottem start*/
+
+.btn{
+    align-items: center;
+    text-align: center;
+}
+
+.btn-4{
+    margin-bottom: 0px;
+    border-radius: 8px;
+    background-color: black;
+    font-size: 14px;
+    padding: 25px 50px;
+    margin: 15px;
+    letter-spacing: 2px;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-family: "Barlow Condensed",arial;
+    font-weight: 500;
+    line-height: 1.15;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color:black;
+    border: 1px solid #cacaca;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn-4:hover{
+    background-color: white;
+    color: black;
+}
+
+/*bottem end*/

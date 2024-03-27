@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed'
+}
+
+
+.banner{
+    color: #fff;
+    
+}
+.banner-1{
+    background-image: url(https://cdn.bigboytoyz.com/new-version/assets/images/career-banner-bgimg.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 480px;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    
+}
+.banner-1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:0;
+    z-index: 0;
+    background-color: black;
+    opacity: 0.75;
+    
+}
+.a-bbt{
+    position: relative;
+    z-index: 30;
+    top: 350px;
+    color: #fff;
+    width: 85%;
+    margin: auto;
+    height: 100%;
+
+
+}
+.a-main-bbt{
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    font-size: 23px;
+    letter-spacing: 1px;
+    
+}
+.a-main-bbt span{
+    font-size: 50px;
+    font-weight: 600;
+}
+/*navbar*/
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 130px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Barlow Condensed",arial;
+    font-size: 16px;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background:red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+/*navbar end*/
+/*nav*/
+
+.nav{
+    width: 100%; 
+    padding: 10px;
+    align-items: center;
+    text-align: center;     
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Barlow Condensed",arial;
+    font-size: 16px;
+    
+}
+.nav ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.nav ul li:hover::after{
+    width: 100%;
+}
+/*nav end*/
+.main-body{
+    width: 85%;
+    margin: auto;
+}
+.sec-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cwv{
+    
+}
+.overlay{
+    display: inline-block;
+    position: relative;
+    top: 83px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #fff;
+    padding: 7px;
+    font-weight: 600;
+    z-index: 7;
+}
+.base{
+    display: inline-block;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 140px;
+    font-size: 900;
+    color: #fff;
+    text-shadow: #000 0 0 1px, #000 0 0 1px, #000 0 0 1px, #000 0 0 1px, #000 0 0 1px, #000 0 0 1px;
+    z-index: 0;
+}
+.sec-2{
+    margin-top: 200px;
+    display: inline-block;
+    opacity: 0.6;
+}
+.quot{
+    margin: auto;
+    width: 52%;
+    left:0;
+    right: 0;
+    text-align: center;
+    font-size: 32px;
+    display: inline-block;
+    position: absolute;
+}
+.fa-quote-right{
+    position: relative;
+    left: 1050px;
+    top: 47px;
+    font-size: 30px;
+}
+.fa-quote-left{
+    position: relative;
+    left: 200px;
+    font-size: 30px;
+    top: 5px;
+}
+.sec-3{
+    margin: 90px auto;
+    text-align: center;
+    font-size: 19px;
+    color: #585858;
+    width: 55%;
+}
+.owc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+.info-dark{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.5;
+}
+.info{
+    font-size: 18px;
+    color: #585858;
+    width: 45%;
+    letter-spacing: 0.3px;
+}
+.cards{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.main-card span{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.5;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.main-card{
+    width: 30%;
+    margin-right: 40px;
+}
+.card-img{
+    width: 100%;
+}
+.card-img img{
+    width: 100%;
+}
+.at-bbt-emp{
+    background-image: url(https://cdn.bigboytoyz.com/new-version/assets/images/employee-benefits-bgimg.jpg);
+    height: 750px;
+    background-position: center center;
+    padding-top: 120px;
+    margin-top: 120px;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background-size: cover;
+}
+.main-at-bbt-emp{
+    width: 85%;
+    margin: auto;
+}
+.info-small{
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 500;
+}
+.info-at-bbt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+}
+.info-big{
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 600;
+}
+.imgs-at-bbt{
+    margin-top: 70px;
+    display: inline-block;
+    width: 25%;
+   
+}
+.main-img-at-bbt{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 70%;
+   
+}
+.main-ab-img{
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    background-color: white;
+    text-align: center;
+    object-fit: contain;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.main-ab-img img{
+    margin: auto;
+}
+.img-info{
+    display: block;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 70%;
+}
+
+
+
+

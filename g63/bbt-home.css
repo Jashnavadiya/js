@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:url(image/homebanner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.connect-link{
+    text-decoration: none;
+    color: #000;
+}
+/*navbar*/
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 130px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Barlow Condensed",arial;
+    font-size: 16px;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background:red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+/*navbar end*/
+/*nav*/
+
+.nav{
+    width: 100%; 
+    padding: 10px;
+    align-items: center;
+    text-align: center;     
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Barlow Condensed",arial;
+    font-size: 16px;
+    
+}
+.nav ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.nav ul li:hover::after{
+    width: 100%;
+}
+/*nav end*/
+/*container*/
+.container{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    padding-left:130px;
+    color: white;
+    transform: translateY(-50%);
+    margin-top: 100px;
+}
+.container h1{
+    font-weight: 100;
+    font-size: 60px;
+    font-family: "Barlow Condensed",arial;
+}
+.container h4{
+    line-height: 50px;
+    margin: 10px 0;
+    font-size: 27px;
+    font-family: "Barlow Condensed",arial;
+    font-weight: 100;
+    color: rgba(255,255,255,0.45);
+}
+
+/*btn*/
+.btn{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    margin-top: 150px;
+}
+
+.btn-2{
+    background-color: #f40b0b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 50%;
+    height: 60px;
+    letter-spacing: 2.5px;
+    font-size: 17px;
+    border-radius: 12px;
+    font-family: "Barlow Condensed",arial;
+    font-weight: 500;
+    line-height: 1.1;
+    border: 1px solid transparent ;
+    transition: all .3s ease-in-out;
+}
+.btn-2:hover{
+    border-color: #f40b0b;
+    background-color: #be0808;
+}
+/*end btn*/
+
+/*know-more*/
+.mitu{
+    display: flex;
+    padding: 45px 0px;
+}
+.know-more{
+    width: 50%;
+    padding: 90px 0;
+}
+.info{
+    max-width: 100%;
+    padding-left: 130px;    
+}
+.info h2{
+    margin: 0;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.1;
+    font-family: "Barlow Condensed",arial;
+}
+.info span{
+    font-size: 32px;
+    color: transparent!important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    font-family: "Barlow Condensed",arial;
+}
+/*end know-more*/
+
+/*details*/
+.details {
+    
+    padding-top: 46px;
+    padding-bottom: 35px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.icon{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding: px 0px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.icon-sale{
+    border: 1px solid black;
+    background-image: url(image/outrightsell-icon.png);
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    min-height: 55px;
+    align-items: center;
+    border-radius: 10px;
+    background-size: 47%;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-clock{
+    border: 1px solid black;
+    background-image: url(image/clock.png);
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    min-height: 55px;
+    align-items: center;
+    border-radius: 10px;
+    background-size: 47%;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-men{
+    border: 1px solid black;
+    background-image: url(image/men.png);
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    min-height: 55px;
+    align-items: center;
+    border-radius: 10px;
+    background-size: 47%;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-hasslefree{
+    border: 1px solid black;
+    background-image: url(image/hasslefree.png);
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    min-height: 55px;
+    align-items: center;
+    border-radius: 10px;
+    background-size: 47%;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cntnt{
+    color: black;
+    font-family: "Barlow Condensed",arial;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: .5px;
+    font-size: 17px;
+}
+strong{
+    display: block;
+    font-weight: bold;
+}
+/*end-details*/
+
+/*button know-more*/
+
+.btn-4{
+    margin-bottom: 0px;
+    min-width: 56%;
+    max-width: 56%;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 14px;
+    padding: 16px 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    display: inline-block;
+    vertical-align: top;
+    color: black;
+    font-family: "Barlow Condensed",arial;
+    font-weight: 500;
+    line-height: 1.15;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #cacaca;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn-4:hover{
+    background-color: black;
+    color: white;
+}
+/*end-button know-more*/
+
+/*img*/
+.img-car{
+    width: 54%;
+    padding-top: 90px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+img{
+   
+    width: 650px;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 15px;
+    vertical-align: top;
+}
+
+/*end-img*/
+
+/*section-branding*/
+.branding{
+    background-color: black;
+    color: white;
+}
+
+/*end-section-branding*/
+
+/*branding start*/
+.branding{
+    padding: 65px 10px;
+}
+
+.type{
+    width: 100%;
+    max-width: 1520px;
+    padding: 0 130px;
+}
+.heading{
+    margin-bottom: 50px;
+}
+.head{
+    color: red;
+    font-family: "Barlow Condensed", arial;
+    letter-spacing: 3px;
+}
+.inner-middle{
+    color: #000;
+}
+.upper{
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid white;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 130px;
+}
+
+.upper-img{
+    text-align: center;
+}
+.img-logo{
+    text-align: center;
+    width: 150px;
+}
+
+.lower{ 
+    border-radius: 0px 0px 15px 15px;
+    padding: 10px;
+}
+.c-name{
+    text-align: center;
+    color: red;
+    font-family: "Barlow Condensed",arial;
+}
+a{
+    text-decoration: none;
+}
+/*branding end*/
+
+/*popular start*/
+.model{
+    width: 100%;
+}
+.model-main{
+    width: 100%;
+    padding: 0px 130px;
+}
+.popular{
+    width: 100%;
+    margin-top: 50px;
+    
+}
+.popular-inner{
+    font-family: "Barlow Condensed",arial;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+
+.popular2{
+    margin: 10px;
+}
+
+.popular-inner2{
+    font-family: "Barlow Condensed",arial;
+    font-weight: 600;
+    padding-left: 10px;
+    font-size: 40px;
+}
+.mm{
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-flow: column;
+}
+.middle-model{
+    width: 100%;
+}
+.cell1{
+    margin:10px;
+    width: 35% ;
+    
+}
+.inner-middle-model{
+    padding: 20px 15px;
+    width: 100%;
+}
+.model-upper{
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 15px 15px 0px 0px;
+}
+.img-cars-main{
+    height: 40%;
+    border-radius: 15px;
+    width: 100%;
+}
+.model-lower{
+    background-color: #f4f4f4;
+    border-radius: 0px 0px 15px 15px;
+}
+.price{
+    padding: 15px;
+    font-family: "Barlow Condensed", arial;
+    letter-spacing: 1px;
+}
+.cars-name{
+    padding-top: 7px;
+    font-family: "Barlow Condensed", arial;
+    padding-left: 15px;
+    letter-spacing: 1px;
+}
+.extra{
+    padding-left: 15px;
+    padding-top: 5px;
+    font-family: "Barlow Condensed", arial;
+    color: #565655;
+    letter-spacing: 1px;
+}
+.model-reg{
+    display: flex;
+    padding: 15px;
+    list-style: none;
+    margin: 0px;
+    align-items: end;
+    text-align: center;
+    justify-content: space-between;
+}
+.model-spann{
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    margin: 25px 0 0;
+    color: #000;
+    box-sizing: border-box;
+    text-align: left;
+    font-weight: 600;
+    align-items: center;
+    padding-top: 5px;
+    font-family: "Barlow Condensed", arial;
+}
+.model-li-inner{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    color: #000;
+    font-family: "Barlow Condensed", arial;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+}
+
+.model-info{
+    margin: 6px 0px;
+    color: #565655;
+    min-width: 33px;
+    font-family: "Barlow Condensed", arial;
+    font-weight: 600;
+    align-items: center;
+    line-height: 1.2;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.model-info-lower{
+    display: block;
+    margin: 6px 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+/*popular end*/
+
+/*how it work start*/
+.how{
+    background-color: black;
+    padding-bottom: 90px;
+}
+.how-main{
+    padding-left: 130px;
+    padding-right: 130px;
+}
+.how-it-upper{
+    width: 100%;
+}
+.how-main-h1{
+    text-align: center;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.how-h1{
+    color: white;
+    font-family: "Barlow Condensed", arial;
+}
+.how-main-p{
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    padding-top: 20px;
+}
+.how-p{
+    color: white;
+    font-size: 16px;
+    font-family: "Barlow Condensed", arial;
+    opacity: .58;
+}
+.how-it{
+    width: 100%;
+    margin-top: 90px;
+    display: flex;
+}
+.how-it-main{
+    width: 25%;
+    padding-top: 20px;
+}
+.upper-how-it-main{
+    text-align: center;
+}
+.how-it-img-1{
+    width: 170px;
+}
+.how-it-img-2{
+    width: 200px;
+}
+.how-it-img-3{
+    width: 145px;
+}
+.how-it-img-4{
+    width: 132px;
+}
+.lower-how-it-main{
+    padding-top: 30px;
+}
+.how-it-p-1{
+    color: white;
+    text-align: center;
+    opacity: .58;
+    font-family: "Barlow Condensed", arial;
+    font-size: 14px;
+}
+.how-it-p-2{
+    color: white;
+    text-align: center;
+    opacity: .58;
+    font-family: "Barlow Condensed", arial;
+    font-size: 14px;
+}
+.how-it-p-3{
+    color: white;
+    text-align: center;
+    opacity: .58;
+    font-family: "Barlow Condensed", arial;
+    font-size: 14px;
+}
+.how-it-p-4{
+    color: white;
+    text-align: center;
+    opacity: .58;
+    font-family: "Barlow Condensed", arial;
+    font-size: 14px;
+}
+.how-it-a{
+    color: white;
+}
+
+/*how it work end */
