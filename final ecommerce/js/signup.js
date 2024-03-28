@@ -30,7 +30,13 @@ const calca = (e) => {
         email: document.getElementById('validationCustom03').value,
         pass: document.getElementById('validationCustom04').value
     }
+    let temp_check=users.filter((ele)=>ele.un==userr.un&&ele.email==userr.email)
     
+    if(temp_check.length>0){
+        alert("This profile already exist")
+        return;
+    }
+
     users.push(userr);
 
     localStorage.setItem('Bro', JSON.stringify(users))

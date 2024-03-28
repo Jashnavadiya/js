@@ -3,10 +3,12 @@
         [
         {
             "email":"admin",
+            "un":"Admin",
             "pass":"admin@123"
         },
         {
             "email":"jash",
+            "un":"Jash",
             "pass":"jash@123"
         }
     ],

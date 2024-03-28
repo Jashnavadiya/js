@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-weight: 300;
 }
+body {
+    position: relative;
+}
 i:hover{ -webkit-text-stroke: 0.3px; }
 .main-body{
     width: 70%;

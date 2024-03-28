@@ -1,3 +1,12 @@
+i {
+    cursor: pointer;
+}
+
+body {
+    position: relative;
+}
+
+
 .main-nav {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
     position: fixed;
@@ -83,6 +92,10 @@
     margin: 5px 0;
 }
 
+.Cart_icon_header a {
+    color: black;
+}
+
 #logout_btn {
     cursor: pointer;
 }
@@ -92,14 +105,24 @@
 
 .main-logout {
     position: fixed;
-    height:100vh;
+    height: 100vh;
     width: 100%;
+    top: 0;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 100;
 }
 
+.logout-cancel {
+    color: white;
+    font-weight: 300;
+    font-size: 50px;
+    text-align: end;
+    width: 98%;
+    margin: auto;
+}
+
 .logout-card {
-    width: 37%;
+    width: 20%;
     margin: auto;
     text-align: center;
     padding: 15px 20px;
@@ -108,8 +131,9 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
     border-radius: 11px;
 }
-.logout_btns button{
-    width: 40%;
+
+.logout_btns button {
+    width: 60%;
     margin: 5px auto;
     font-size: 17px;
     padding: 5px 15px;
@@ -117,12 +141,17 @@
     border: none;
     box-shadow: 0 0 0.1px 0.1px gray;
 }
+
 .logout_imgs {
-    width: 15%;
+    width: 25%;
     margin: auto;
 }
 
 /*-****************************************************************/
+.main-body {
+    position: relative;
+}
+
 .hidden {
     display: none;
 }

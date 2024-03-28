@@ -27,13 +27,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-underline ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
+                            <a class="nav-link " aria-current="page" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/pages/products.html">Products</a>
+                            <a class="nav-link active" href="../pages/products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/aboutus.html">About Us</a>
                         </li>
                         <li class="nav-item addproduct_nav">
-                            <a class="nav-link"  href="../pages/add.html">Add Products</a>
+                            <a class="nav-link" href="../pages/add.html">Add Products</a>
                         </li>
                         <li class="nav-item logins">
                             <a class="nav-link" href="../pages/signup.html">SignUp</a>
@@ -53,7 +56,19 @@
                                         placeholder="Search" aria-label="Search">
                                 </div>
                             </div>
-                            <span class="hi ps-3 py-2" type="submit"><i class="bi bi-search"></i></span>
+                            <span class="hi ps-3 py-2"><i class="bi bi-search"></i></span>
+
+                            <span class="Cart_icon_header ps-3 py-2"><a href="../pages/cart.html"><i
+                                        class="bi bi-cart"></i></a></span>
+                            <span class="profile_icons ps-3 py-2"><i class="bi bi-person-fill fa-lg"></i>
+                                <div class="profile_icon_dropdown">
+                                    <span>Profile</span>
+                                    <hr>
+                                    <span id="logout_btn">
+                                        <span>Logout</span> <i class="bi bi-box-arrow-in-right"></i>
+                                    </span>
+                                </div>
+                            </span>
                         </div>
 
                     </form>
@@ -62,17 +77,39 @@
         </nav>
     </div>
     <div class="main-body">
+        <div class="sidebar_main">
+            <div class="main_sidebar">
+                s
+            </div>
+        </div>
         <div class="main-card-body">
-            <div class="main-body-header"><h2 >All Products</h2><hr><div class="sorting-header-main"><label for="sorting-header"><i class="bi bi-filter"></i></label>
-                <select class="sorting-header">
-                    <option selected hidden value="0">Sort By:</option>
-                    <option value="1">Technology</option>
-                    <option value="2">Fashion</option>
-                    <option value="3">Home appliance</option>
-                  </select>
-            </div></div>
+            <div class="main-body-header">
+                <h2 class="WhatisGoingon">Products</h2>
+                <hr>
+                <div class="sorting-header-main"><label id="icon_Filter" for="sorting-header"><i class="bi bi-filter"></i></label>
+                    <select class="sorting-header">
+                        <option selected hidden value="0">Sort By:</option>
+                        <option value="1">Technology</option>
+                        <option value="2">Fashion</option>
+                        <option value="3">Home appliance</option>
+                    </select>
+                </div>
+            </div>
             <div class="result">
 
+            </div>
+        </div>
+    </div>
+    <div class="main-logout">
+        <h1 class="logout-cancel"><i class="bi bi-x cancel_btn_logout"></i></h1>
+        <div class="logout-card">
+            <div class="logout_imgs">
+                <img src="../imges/logout.svg" alt="">
+            </div>
+            <h1>Are You sure Want to Logout?</h1>
+            <div class="logout_btns">
+                <button class="logout_button_reject">Naah, I was Joking...</button><br>
+                <button class="logout_button_accept">Yeah, I Want To..</button>
             </div>
         </div>
     </div>

@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-weight: 300;
 }
-
+body {
+    position: relative;
+}
 #Main-form {
     width: 75%;
     margin: auto;

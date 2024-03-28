@@ -30,3 +30,4 @@ const display=()=>{
     })
 }
 display()
+document.get
