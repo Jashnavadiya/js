@@ -13,8 +13,8 @@
 </head>
 
 <body class="bg-body-tertiary">
-    
-    
+
+
     <div class="main-loader">
         <span class="loader">
             <span class="loader-inner">
@@ -61,8 +61,8 @@
                         <div class="outer6">
                             <div class="middle6">
                                 <div class="cl6">
-                                    <input class="search-bar-header bg-body-tertiary py-2 ms-3" id="main-Search" type="search"
-                                        placeholder="Search" aria-label="Search">
+                                    <input class="search-bar-header bg-body-tertiary py-2 ms-3" id="main-Search"
+                                        type="search" placeholder="Search" aria-label="Search">
                                 </div>
                             </div>
                             <span class="hi ps-3 py-2"><i class="bi bi-search"></i></span>
@@ -89,13 +89,38 @@
 
     <div class="sidebar_main">
         <div class="main_sidebar">
-            <h2>Filters</h2><hr>
+            <h2>Filters</h2>
+            <hr>
             <div class="cata">
-                <ul>
-                    <li>
-                        
+                <ul class="cata-main">
+                    <li class="cata-head">
+                        <p> <span>Catagory</span> <i class="bi bi-chevron-up "></i></p>
+                        <ul class="cata-memberr">
+                            <li class="cata-member">
+                                <p id="Sorting_tech">Technology</p>
+                            </li>
+                            <li class="cata-member">
+                                <p id="Sorting_fashion">Fashion</p>
+                            </li>
+                            <li class="cata-member">
+                                <p id="Sorting_home_appliance"> Home Appliance</p>
+                            </li>
+                        </ul>
                     </li>
+                    <li class="cata-head1">
+                        <p> <span>Sort By price</span> <i class="bi bi-chevron-up "></i></p>
+                        <ul class="cata-memberr1">
+                            <li class="cata-member">
+                                <input type="checkbox" name="" id="htl"><label for="htl">High To Low</label>
+                            </li>
+                            <li class="cata-member"> <input type="checkbox" name="" id="lth"><label for="lth">Low To High</label>
+                            </li>
+                            
+                        </ul>
+                    </li>
+
                 </ul>
+
             </div>
         </div>
     </div>
@@ -104,8 +129,8 @@
             <div class="main-body-header">
                 <h2 class="WhatisGoingon">Products</h2>
                 <hr>
-                <div class="sorting-header-main"><div id="icon_Filter"><i
-                            class="bi bi-filter icon_Filter"></i></div>
+                <div class="sorting-header-main">
+                    <div id="icon_Filter"><i class="bi bi-filter icon_Filter"></i></div>
                     <select class="sorting-header">
                         <option selected hidden value="0">Sort By:</option>
                         <option id="Sorting_all" value="All">All</option>
@@ -127,7 +152,7 @@
 </body>
 <script src="../js/loader.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script src="../js/products.js"></script>
 <script src="../js/header.js"></script>
+<script src="../js/products.js"></script>
 
 </html>

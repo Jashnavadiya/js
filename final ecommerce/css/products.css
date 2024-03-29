@@ -5,6 +5,11 @@
     font-weight: 350;
 }
 
+ul,
+li {
+    list-style: none;
+}
+
 body {
     position: relative;
 }
@@ -21,16 +26,16 @@ body {
 
 .sidebar_main {
     width: 20%;
-    position: absolute;
-    background-color:#f8f9fa;
+    position: fixed;
+    background-color: #f8f9fa;
     box-shadow: rgba(0, 0, 0, 0.15)0 0 7px;
-    height: 86vh;
+    height: 88vh;
     margin-top: 73px;
     margin-left: 5px;
     padding: 10px 15px;
     transition: all 0.5s;
     z-index: 89;
-    overflow: hidden;
+    bottom: 0;
 }
 
 .main-card-body {
@@ -39,14 +44,17 @@ body {
     padding: 20px 0;
     transition: all 0.5s
 }
-.sidebar_hide{
+
+.sidebar_hide {
     width: 0%;
     visibility: hidden;
     opacity: 0;
 }
-.main_card_show{
+
+.main_card_show {
     width: 100%;
 }
+
 .main-body-header {
     width: 95%;
     display: flex;
@@ -96,6 +104,36 @@ body {
     width: 85%;
     height: 230px;
     object-fit: contain;
+}
+
+
+
+.cata-member label {
+    margin-left: 2%;
+}
+
+.cata-memberr {
+    transition: all 0.5s;
+    height: max-content;
+}
+
+.cata_memeber_hide {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cata-member1 label {
+    margin-left: 2%;
+}
+
+.cata-memberr1 {
+    transition: all 0.5s;
+    height: max-content;
+}
+
+.rotate {
+    rotate: 90deg;
 }
 
 @media(max-width:750px) {

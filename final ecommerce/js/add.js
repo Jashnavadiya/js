@@ -1,6 +1,4 @@
 
-
-let products = JSON.parse(localStorage.getItem("Store")) || [];
 const calca = (e) => {
     e.preventDefault();
     let imgs_drop = document.querySelector('.imgs-drop');
