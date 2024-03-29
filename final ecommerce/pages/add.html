@@ -14,7 +14,15 @@
 
 <body class="bg-body-tertiary">
 
-    <div class="main-nav">
+    <div class="main-loader">
+        <span class="loader">
+            <span class="loader-inner">
+            </span>
+        </span>
+    </div>
+
+
+    <div class="main-nav bg-body-tertiary">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid ">
                 <img class="navbar-brand nav-img-logo ms-4"
@@ -27,16 +35,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-underline ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+                            <a class="nav-link " aria-current="page" href="../pages/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/products.html">Products</a>
+                            <a class="nav-link active" href="../pages/products.html">Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/aboutus.html">About Us</a>
                         </li>
                         <li class="nav-item addproduct_nav">
-                            <a class="nav-link active" href="../pages/add.html">Add Products</a>
+                            <a class="nav-link" href="../pages/add.html">Add Products</a>
                         </li>
                         <li class="nav-item logins">
                             <a class="nav-link" href="../pages/signup.html">SignUp</a>
@@ -46,13 +54,13 @@
                         </li>
 
                     </ul>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex " id="search_inputs" role="search">
 
 
                         <div class="outer6">
                             <div class="middle6">
                                 <div class="cl6">
-                                    <input class="search-bar-header bg-body-tertiary py-2 ms-3" type="search"
+                                    <input class="search-bar-header bg-body-tertiary py-2 ms-3" id="main-Search" type="search"
                                         placeholder="Search" aria-label="Search">
                                 </div>
                             </div>
@@ -99,9 +107,9 @@
                     <div class="form-floating">
                         <select class="form-select floatingSelectGrid" id="cata" required>
                             <option selected hidden value="0">Open this select menu</option>
-                            <option value="1">Technology</option>
-                            <option value="2">Fashion</option>
-                            <option value="3">Home appliance</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Fashion">Fashion</option>
+                            <option value="Home_appliance">Home appliance</option>
                         </select><label for="floatingSelectGrid">category of product</label>
                     </div>
                 </div>
@@ -130,6 +138,7 @@
         </div>
     </div>
 </body>
+<script src="../js/loader.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/add.js"></script>
 <script src="../js/header.js"></script>

@@ -1,9 +1,9 @@
 
-let products= JSON.parse(localStorage.getItem("Store"))||[];
-console.log(products);
 const reader=new FileReader();
-const display=()=>{
-    products.map((ele)=>{
+const display=(hello)=>{
+    
+document.querySelector('.result').innerHTML="";
+    hello.map((ele)=>{
         let img= document.createElement('img');
         img.src=ele.img;
         img.setAttribute('id','s-img');
@@ -29,5 +29,29 @@ const display=()=>{
         document.querySelector('.result').append(card)
     })
 }
-display()
-document.get
+document.querySelector('.icon_Filter').addEventListener('click',()=>{
+    document.querySelector('.main-card-body').classList.toggle('main_card_show');
+    document.querySelector('.sidebar_main').classList.toggle('sidebar_hide');
+})
+const sortingprice=(hii)=>{
+    let hi = products.filter((ele)=>ele.cata==hii)
+    if(hii=="All")hi=products;
+    display(hi);
+}
+document.querySelector('.sorting-header').addEventListener('change',()=>{
+    let hii=document.querySelector('.sorting-header').value;
+    sortingprice(hii)
+})
+
+
+let isSearched=JSON.parse(sessionStorage.getItem('Search'));
+if(isSearched!=null){
+    console.log(isSearched);
+    display(isSearched);
+    
+    
+}
+else{
+    
+display(products)
+}

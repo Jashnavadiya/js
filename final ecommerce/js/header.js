@@ -1,6 +1,20 @@
 
 
-
+let products= JSON.parse(localStorage.getItem("Store"))||[];
+console.log(products);
+document.querySelector('.main-logout').innerHTML=`
+<h1 class="logout-cancel"><i class="bi bi-x cancel_btn_logout"></i></h1>
+        <div class="logout-card">
+            <div class="logout_imgs">
+                <img src="../imges/logout.svg" alt="">
+            </div>
+            <h1>Are You sure Want to Logout?</h1>
+            <div class="logout_btns">
+                <button class="logout_button_reject">Naah, I was Joking...</button><br>
+                <button class="logout_button_accept">Yeah, I Want To..</button>
+            </div>
+        </div>
+`
 document.querySelector('.main-logout').classList.add('hidden')
 const temp = () => {
 
@@ -65,4 +79,21 @@ document.querySelector('.logout_button_accept').addEventListener('click', () => 
     temp();
 })
 document.getElementById('logout_btn').addEventListener('click', () => { temp() })
+
+const Search=(hi)=>{
+
+   let hii= products.filter((ele) => ele.title.includes(hi));
+   console.log(hii);
+   sessionStorage.setItem('Search',JSON.stringify(hii));
+   
+   window.location.href="../pages/products.html"
+}
+const handleSearch=(e)=>{
+    e.preventDefault();
+    let hi=document.getElementById('main-Search').value;
+    Search(hi);
+}
+
+document.getElementById('search_inputs').addEventListener("submit",handleSearch)
+
 temp()

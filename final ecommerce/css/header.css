@@ -14,7 +14,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 99;
+    z-index: 90;
 }
 
 .navbar {
@@ -126,14 +126,15 @@ body {
     margin: auto;
     text-align: center;
     padding: 15px 20px;
-    transform: translateY(80%);
+    transform: translateY(20%);
     background-color: #f8f9fa;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
     border-radius: 11px;
 }
 
 .logout_btns button {
-    width: 60%;
+    min-width: 90%;
+    
     margin: 5px auto;
     font-size: 17px;
     padding: 5px 15px;
@@ -146,6 +147,78 @@ body {
     width: 25%;
     margin: auto;
 }
+/*-----------loader-------------------------------------*/
+.main-loader{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #f8f9fa;
+    z-index: 103;
+    text-align: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border: 4px solid rgba(127, 118, 118, 0.2);
+    top: 50%;
+    animation: loader 2s infinite ease;
+  }
+  
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(127, 118, 118, 0.2);
+    animation: loader-inner 2s infinite ease-in;
+  }
+  
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    25% {
+      transform: rotate(180deg);
+    }
+    
+    50% {
+      transform: rotate(180deg);
+    }
+    
+    75% {
+      transform: rotate(360deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes loader-inner {
+    0% {
+      height: 0%;
+    }
+    
+    25% {
+      height: 0%;
+    }
+    
+    50% {
+      height: 100%;
+    }
+    
+    75% {
+      height: 100%;
+    }
+    
+    100% {
+      height: 0%;
+    }
+  }
 
 /*-****************************************************************/
 .main-body {

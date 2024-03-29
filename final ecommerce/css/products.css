@@ -11,7 +11,7 @@ body {
 
 .main-body {
     position: relative;
-    top: 70px;
+    top: 68px;
 }
 
 .bi-filter {
@@ -22,16 +22,31 @@ body {
 .sidebar_main {
     width: 20%;
     position: absolute;
-    background-color: yellow;
-    height: 100vh;
+    background-color:#f8f9fa;
+    box-shadow: rgba(0, 0, 0, 0.15)0 0 7px;
+    height: 86vh;
+    margin-top: 73px;
+    margin-left: 5px;
+    padding: 10px 15px;
+    transition: all 0.5s;
+    z-index: 89;
+    overflow: hidden;
 }
 
 .main-card-body {
     width: 79%;
     margin: 29px 0 0 auto;
     padding: 20px 0;
+    transition: all 0.5s
 }
-
+.sidebar_hide{
+    width: 0%;
+    visibility: hidden;
+    opacity: 0;
+}
+.main_card_show{
+    width: 100%;
+}
 .main-body-header {
     width: 95%;
     display: flex;
