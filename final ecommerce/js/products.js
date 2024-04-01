@@ -1,9 +1,10 @@
 
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 const reader = new FileReader();
 const display = (hello) => {
 
     document.querySelector('.result').innerHTML = "";
-    hello.map((ele) => {
+    hello.map((ele,i) => {
         let img = document.createElement('img');
         img.src = ele.img;
         img.setAttribute('id', 's-img');
@@ -20,18 +21,23 @@ const display = (hello) => {
         price.innerHTML = ele.price;
         price.setAttribute('id', 's-price');
 
-        let btn_group=document.createElement('div');
-        btn_group.setAttribute('id',"btns_grp");
-        let btn1= document.createElement('button');
-        btn1.setAttribute('id','add_cart');
+        let btn_group = document.createElement('div');
+        btn_group.setAttribute('id', "btns_grp");
+        let btn1 = document.createElement('button');
+        btn1.setAttribute('id', 'add_cart');
+        btn1.innerHTML = "Add to Cart"
+        btn1.addEventListener("click",()=>{
+            
+        })
 
-        let btn2=document.createElement('button');
-        btn2.setAttribute('id','buy_now')
+        let btn2 = document.createElement('button');
+        btn2.setAttribute('id', 'buy_now');
+        btn2.innerHTML = "Buy Now"
 
-
+        btn_group.append(btn1, btn2)
         let card = document.createElement('div');
         card.setAttribute('id', 's-card');
-        card.append(img, title, deca, price)
+        card.append(img, title, deca, price, btn_group)
 
         document.querySelector('.result').append(card)
     })
