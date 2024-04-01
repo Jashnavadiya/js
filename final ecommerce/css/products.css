@@ -162,6 +162,10 @@ body {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
+.main-body-header {
+    width: 100%;
+}
+
 @media(max-width:750px) {
     #s-card {
         width: 100%;
@@ -182,6 +186,12 @@ body {
     .sorting-header-main {
         width: 10%;
     }
+
+    .main-body-header hr {
+        width: 40%;
+    }
+
+
 }
 
 @media(max-width:1000px) and (min-width:750px) {
@@ -196,6 +206,10 @@ body {
 
     .sidebar_main {
         display: none;
+    }
+
+    .main-body-header hr {
+        width: 50%;
     }
 }
 
@@ -215,12 +229,20 @@ body {
     .sidebar_main {
         display: none;
     }
+
+    .main-body-header hr {
+        width: 60%;
+    }
 }
 
 @media(max-width:1400px) and (min-width:1200px) {
     #s-card {
         margin: 20px 2.66%;
         width: 28%;
+    }
+
+    .main-body-header hr {
+        width: 60%;
     }
 }
 
