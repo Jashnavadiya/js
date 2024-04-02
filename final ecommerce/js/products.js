@@ -4,7 +4,7 @@ const reader = new FileReader();
 const display = (hello) => {
 
     document.querySelector('.result').innerHTML = "";
-    hello.map((ele,i) => {
+    hello.map((ele, i) => {
         let img = document.createElement('img');
         img.src = ele.img;
         img.setAttribute('id', 's-img');
@@ -26,8 +26,18 @@ const display = (hello) => {
         let btn1 = document.createElement('button');
         btn1.setAttribute('id', 'add_cart');
         btn1.innerHTML = "Add to Cart"
-        btn1.addEventListener("click",()=>{
-            
+        btn1.addEventListener("click", () => {
+            let iscarted = cart.filter((fila) => fila.title == ele.title);
+
+            if (iscarted.length > 0) {
+                window.location.href="../pages/cart.html"
+            }
+            else {
+                let carts = { ...ele, qty: 1 }
+                console.log(carts);
+                cart.push(carts)
+                localStorage.setItem('cart', JSON.stringify(cart))
+            }
         })
 
         let btn2 = document.createElement('button');
