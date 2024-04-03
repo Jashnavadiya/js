@@ -31,38 +31,105 @@ else {
 
 
 }
+const mainui = () => {
+    document.querySelector('.main-content_body').innerHTML = `<div class="main-body-cart">
+                <div class="main-cart-header">
+                    <h1><i class="bi bi-bag"></i>My Cart</h1>
+                </div>
+                <div class="main-content-cart-body">
+                    <div class="sec-1 col-8">
+
+                        <div class="main-datas">
+                            
+                          
+                        </div>
+                        <div class="result-total">
+                            <div class="main-result-total">
+                                <span class="n_item">1 item</span>
+                                <span class="t_item">Rs. 200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec-2 col-4 ms-auto ps-5 pe-3">
+                        <form action="" id="promo">
+                            <label for="floatingInput">ENTER PROMO CODE</label>
+                            <p class="form-floating promo-div mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Promo Code</label>
+                                <input type="submit" id="promo-sub" value="APPLY">
+                            </p>
+                        </form>
+                        <div class="discount-show"></div>
+                        <div class="count">
+                            <div class="count-1"><span>Shipping cost</span><span id="count1">1</span>
+                            </div>
+                            <div class="count-1"><span>Discount</span><span id="count2">1</span>
+                            </div>
+                            <div class="count-1"><span>Tax</span><span id="count3">1</span>
+                            </div>
+                            <div class="count-1 count-bold"><span>Estimated Total</span><span id="count1">1</span>
+                            </div>
+                            <div class="count-2">
+                                <br><br><br>
+                                <p id="away-fromfree"></p><br><br>
+                                <button id="checkout_btn">CHECKOUT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+    ui(cart)
+
+}
 const ui = (data) => {
-    document.querySelector('.sec-2').innerHTML = ""
+
     data.map((ele, i) => {
-        let main_div=document.createElement('div');
-        main_div.setAttribute('id','main-div');
-        
-        let left_div=document.createElement('div')
-        left_div.setAttribute('id','left_div');
-        
-        let img=document.createElement('img');
-        img.setAttribute('id','img');
-        img.src=ele.img;
+        document.querySelector('.main-datas').innerHTML += `<div class="card-body">
+        <div class="main-img-info"><img src="../imges/demo-cart.png" alt="" id="img_s_produt">
+            <div id="info">
+                <h3>Hey There</h3>
+                <h5 id="extra-1">o kk k k k k k k k k k k k k k k k k k k k k k k k kk k k k k k
+                    k k
+                    k k
+                    k k
+                    k k k k k k
+                    k k k k kk k k k k k k kk k k k k k kk k k k k k k </h5>
+                <h5>In Stock</h5>
+            </div>
+        </div>
+        <div class="price">
+            <h3>Each</h3>
+            <h5>Rs. 890</h5>
+        </div>
+        <div class="main-qty">
+            <p class="header-qty">Quantity</p>
+            <div class="qty">
+                <button id="qty_m"><i class="bi bi-dash"></i></button>
+                <div class="qty_s">0</div>
+                <button id="qty_a"><i class="bi bi-plus-lg"></i></button>
+            </div>
+        </div>
+        <div class="price-total">
+            <h3>Total</h3>
+            <h5>Rs. 890</h5>
+        </div>
+    </div>`
 
-        let title_div=document.createElement("div");
-        title_div.setAttribute('id','data_title');
-        
-        let title=document.createElement('p')
-        title.setAttribute('id','title');
-        title.innerHTML=ele.title;
-        
-        let desc=document.createElement('p');;
-        desc.setAttribute('id','desc');
-        desc.innerHTML=ele.desc;
+    function truncateText(selector, maxLength) {
+        var element = document.querySelector(selector),
+            truncated = element.innerText;
 
-        title_div.append(title,desc);
-
-        let right_div=document.createElement('div');
-        right_div.setAttribute('id','right_div');
-
-        main_div.append(left_div,right_div);
-        document.querySelector('.sec-2').append(main_div)
+        if (truncated.length > maxLength) {
+            truncated = truncated.substr(0, maxLength) + '...';
+        }
+        return truncated;
+    }
+    //You can then call the function with this
+    document.querySelector('#extra-1').innerText = truncateText('#extra-1 ', 17);
     })
 }
+mainui()
+
 
 

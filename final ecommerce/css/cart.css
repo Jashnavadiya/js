@@ -1,3 +1,7 @@
+* {
+    font-weight: 400;
+}
+
 .main-body {
     background-color: red;
     margin-top: 6.5%;
@@ -95,10 +99,108 @@
     font-size: 21px;
     font-weight: 500;
 }
-#checkout_btn{
+
+#checkout_btn {
     background-color: yellow;
     border: none;
     outline: none;
     border-radius: 7px;
     padding: 13px 70px;
+}
+
+.qty {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: max-content;
+}
+
+.qty_s {
+    margin: 0 6px;
+}
+
+.qty button {
+    border: none;
+    outline: none;
+    color: black;
+    background-color: transparent;
+}
+
+
+#info,
+.price,
+.main-qty,
+.price-total {
+    height: 100%;
+}
+
+#img_s_produt {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.card-body {
+    max-height: 30vh;
+    width: 95%;
+    margin-left: auto;
+    padding: 10px 20px;
+    display: flex;
+    border-top: 1px solid gray;
+    border-collapse: collapse;
+    justify-content: space-between;
+}
+
+.result-total {
+    width: 95%;
+    margin-left: auto;
+    border-top: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.main-result-total {
+    width: 80%;
+    margin-left: auto;
+    margin-right: 2%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#info {
+    text-align: left;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.main-img-info {
+    display: flex;
+}
+
+#info h5 {
+    font-size: 15px;
+    color: rgb(130, 130, 130);
+}
+
+#info h3,
+.price h5 {
+    color: black;
+    font-size: 17px;
+}
+
+.price h3,
+.header-qty,
+.price-total h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: rgb(80, 80, 80);
+    font-weight: 400;
+
+}
+
+.main-content-cart-body {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
 }
