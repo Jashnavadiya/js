@@ -32,7 +32,7 @@ else {
 
 }
 const ui = (data) => {
-    document.querySelector('.main-content_body').innerHTML = ""
+    document.querySelector('.sec-2').innerHTML = ""
     data.map((ele, i) => {
         let main_div=document.createElement('div');
         main_div.setAttribute('id','main-div');
@@ -44,11 +44,24 @@ const ui = (data) => {
         img.setAttribute('id','img');
         img.src=ele.img;
 
+        let title_div=document.createElement("div");
+        title_div.setAttribute('id','data_title');
+        
+        let title=document.createElement('p')
+        title.setAttribute('id','title');
+        title.innerHTML=ele.title;
+        
+        let desc=document.createElement('p');;
+        desc.setAttribute('id','desc');
+        desc.innerHTML=ele.desc;
+
+        title_div.append(title,desc);
+
         let right_div=document.createElement('div');
         right_div.setAttribute('id','right_div');
 
         main_div.append(left_div,right_div);
-        document.querySelector('.main-content_body').append(main_div)
+        document.querySelector('.sec-2').append(main_div)
     })
 }
 

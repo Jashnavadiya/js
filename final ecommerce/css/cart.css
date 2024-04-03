@@ -95,3 +95,10 @@
     font-size: 21px;
     font-weight: 500;
 }
+#checkout_btn{
+    background-color: yellow;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 13px 70px;
+}
