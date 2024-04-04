@@ -11,8 +11,6 @@
     height: 60vh;
 }
 
-#banner-img {}
-
 #banner_btn {
     border-radius: 7px;
     padding: 10px 15px;
@@ -135,7 +133,7 @@
 }
 
 #img_s_produt {
-    max-width: 300px;
+    max-width: 250px;
     max-height: 300px;
     object-fit: contain;
 }
@@ -197,6 +195,9 @@
     color: rgb(80, 80, 80);
     font-weight: 400;
 
+}
+.price{
+    width: 140px;
 }
 
 .main-content-cart-body {

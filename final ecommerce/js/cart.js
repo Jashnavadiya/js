@@ -83,31 +83,25 @@ const mainui = () => {
 
 }
 const ui = (data) => {
-
+    let total=0;
+    let g_total=0;
     data.map((ele, i) => {
         document.querySelector('.main-datas').innerHTML += `<div class="card-body">
-        <div class="main-img-info"><img src="../imges/demo-cart.png" alt="" id="img_s_produt">
+        <div class="main-img-info"><img src="${ele.img}" alt="" id="img_s_produt">
             <div id="info">
-                <h3>Hey There</h3>
-                <h5 id="extra-1">o kk k k k k k k k k k k k k k k k k k k k k k k k kk k k k k k
-                    k k
-                    k k
-                    k k
-                    k k k k k k
-                    k k k k kk k k k k k k kk k k k k k kk k k k k k k </h5>
+                <h3>${ele.title}</h3>
+                <h5 class="extra-1">${ele.desc}</h5>
                 <h5>In Stock</h5>
             </div>
         </div>
         <div class="price">
             <h3>Each</h3>
-            <h5>Rs. 890</h5>
+            <h5>Rs. ${ele.price}</h5>
         </div>
         <div class="main-qty">
             <p class="header-qty">Quantity</p>
-            <div class="qty">
-                <button id="qty_m"><i class="bi bi-dash"></i></button>
-                <div class="qty_s">0</div>
-                <button id="qty_a"><i class="bi bi-plus-lg"></i></button>
+            <div class="qty " id="qty${i}">
+                
             </div>
         </div>
         <div class="price-total">
@@ -116,17 +110,46 @@ const ui = (data) => {
         </div>
     </div>`
 
-    function truncateText(selector, maxLength) {
-        var element = document.querySelector(selector),
-            truncated = element.innerText;
+    let m_btn=document.createElement('button');
+    m_btn.innerHTML=`<i class="bi bi-dash"></i>`
+    m_btn.setAttribute('class','qty_m');
+    m_btn.setAttribute('id','qty_m');
+    m_btn.addEventListener('click',()=>{
+            
+        alert(i)
+        console.log(ele.qty);
+    })
+
+    let s_div=document.createElement('div');
+    s_div.innerHTML=ele.qty;
+    s_div.setAttribute('class','qty_s')
+    s_div.setAttribute('id','qty_s')
+
+    let p_btn=document.createElement('button');
+    p_btn.innerHTML=`<i class="bi bi-plus-lg"></i>`
+    p_btn.setAttribute('class','qty_a')
+    p_btn.setAttribute('id','qty_a')
+
+    document.getElementById(`qty${i}`).append(m_btn,s_div,p_btn)
+
+    if(ele.qty==1){
+        document.getElementsByClassName('qty_m')[i].innerHTML=`<i class="bi bi-trash"></i>`
+    }
+      
+        p_btn.addEventListener('click',()=>{
+            ele.qty++;
+          
+        })
+    function truncateText( maxLength) {
+            truncated = ele.desc;
 
         if (truncated.length > maxLength) {
             truncated = truncated.substr(0, maxLength) + '...';
         }
         return truncated;
     }
-    //You can then call the function with this
-    document.querySelector('#extra-1').innerText = truncateText('#extra-1 ', 17);
+    console.log(i);
+    document.getElementsByClassName('extra-1')[i].innerText=truncateText(17)
     })
 }
 mainui()
