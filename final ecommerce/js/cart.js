@@ -83,10 +83,11 @@ const mainui = () => {
 
 }
 const ui = (data) => {
-    let total=0;
-    let g_total=0;
+    let total = 0;
+    let g_total = 0;
     data.map((ele, i) => {
-        document.querySelector('.main-datas').innerHTML += `<div class="card-body">
+        let temp = document.createElement('div');
+        temp.innerHTML = `<div class="card-body">
         <div class="main-img-info"><img src="${ele.img}" alt="" id="img_s_produt">
             <div id="info">
                 <h3>${ele.title}</h3>
@@ -110,46 +111,96 @@ const ui = (data) => {
         </div>
     </div>`
 
-    let m_btn=document.createElement('button');
-    m_btn.innerHTML=`<i class="bi bi-dash"></i>`
-    m_btn.setAttribute('class','qty_m');
-    m_btn.setAttribute('id','qty_m');
-    m_btn.addEventListener('click',()=>{
-            
-        alert(i)
-        console.log(ele.qty);
-    })
+        let main_div = document.createElement('div');
+        main_div.setAttribute('class', 'card-body');
 
-    let s_div=document.createElement('div');
-    s_div.innerHTML=ele.qty;
-    s_div.setAttribute('class','qty_s')
-    s_div.setAttribute('id','qty_s')
+        let main_img_info = document.createElement('div');
+        main_img_info.setAttribute('class', 'main-img-info');
 
-    let p_btn=document.createElement('button');
-    p_btn.innerHTML=`<i class="bi bi-plus-lg"></i>`
-    p_btn.setAttribute('class','qty_a')
-    p_btn.setAttribute('id','qty_a')
+        let img_s_produt = document.createElement('img');
+        img_s_produt.setAttribute('id', 'img_s_produt');
+        img_s_produt.src = ele.img
 
-    document.getElementById(`qty${i}`).append(m_btn,s_div,p_btn)
+        let info = document.createElement('div');
+        info.setAttribute('id', 'info')
 
-    if(ele.qty==1){
-        document.getElementsByClassName('qty_m')[i].innerHTML=`<i class="bi bi-trash"></i>`
-    }
-      
-        p_btn.addEventListener('click',()=>{
-            ele.qty++;
-          
+        let info_h3 = document.createElement('h3');
+        info_h3.innerHTML = ele.title
+
+        let info_h5_1 = document.createElement('h5');
+        info_h5_1.innerHTML = ele.desc;
+
+        let info_h5_2 = document.createElement('h5');
+        info_h5_2.innerHTML = "In Stock";
+
+        let price_div = document.createElement('div');
+        price_div.setAttribute('class', 'price');
+
+        let price_h3 = document.createElement('h3');
+        price_h3.innerHTML = "Each";
+
+        let price_h5 = document.createElement('h5');
+        price_h5.innerHTML = ele.price
+
+        let main_qty = document.createElement('div');
+        main_qty.setAttribute('class', 'main-qty');
+
+
+        let main_qty_p = document.createElement('p');
+        main_qty_p.setAttribute('class', 'header-qty')
+
+
+        let qty = document.createElement('div');
+        qty.setAttribute('id', 'qty')
+        qty.setAttribute('class', 'qty')
+
+        let m_btn = document.createElement('button');
+        m_btn.innerHTML = `<i class="bi bi-dash"></i>`
+        m_btn.setAttribute('class', 'qty_m');
+        m_btn.setAttribute('id', 'qty_m');
+        m_btn.addEventListener('click', () => {
+
+            alert(i)
+            ele.qty--;
+            console.log(ele.qty);
         })
-    function truncateText( maxLength) {
+
+        let s_div = document.createElement('div');
+        s_div.innerHTML = ele.qty;
+        s_div.setAttribute('class', 'qty_s')
+        s_div.setAttribute('id', 'qty_s')
+
+        let p_btn = document.createElement('button');
+        p_btn.innerHTML = `<i class="bi bi-plus-lg"></i>`
+        p_btn.setAttribute('class', 'qty_a')
+        p_btn.setAttribute('id', 'qty_a')
+
+
+
+        p_btn.addEventListener('click', () => {
+            ele.qty++;
+
+        })
+
+        function truncateText(maxLength) {
             truncated = ele.desc;
 
-        if (truncated.length > maxLength) {
-            truncated = truncated.substr(0, maxLength) + '...';
+            if (truncated.length > maxLength) {
+                truncated = truncated.substr(0, maxLength) + '...';
+            }
+            return truncated;
         }
-        return truncated;
-    }
-    console.log(i);
-    document.getElementsByClassName('extra-1')[i].innerText=truncateText(17)
+        let price_total = document.createElement('div');
+        price_total.setAttribute('class', 'price-total');
+
+        let price_total_h3 = document.createElement('h3');
+        price_total_h3.innerHTML = "Total";
+
+        let price_total_h5 = document.createElement('h5');
+        price_total_h5.innerHTML = `Rs. total`
+
+        
+        price_total.append(price_total_h3,price_total_h5)
     })
 }
 mainui()
