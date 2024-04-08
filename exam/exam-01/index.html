@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>EXam sdlmqsljdqmqd</title>
+</head>
+<body>
+    <div class="main-body">
+        <div class="main-form">
+            <form id="form-data">
+                <label for="name">Enter The Name</label>
+                <input id="name" type="text" required><br>
+                <label for="img">Enter The Img</label>
+                <input id="img" type="url" required><br>
+                <label for="email">Enter The Email</label>
+                <input id="email" type="email" required><br>
+                <label for="passwod">Enter The passwod</label>
+                <input id="passwod" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" type="password" required><br>
+                <label for="number_m">Enter The Mobile Number</label>
+                <input id="number_m" type="tel" pattern="^[0-9]{10}$" required><br>
+                <label for="Age">Enter The Age</label>
+                <select name="hi" id="Age" required>
+                    <option value="0" selected hidden>Select The Age</option>
+                    <option value="Below 18 Year">below 18</option>
+                    <option value="18 Year old">18y/0</option>
+                    <option value="Older Than 18">older Than 18</option>
+                </select><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="main-result">
+            <table>
+                <tr>
+                    <td id="tds">
+                        Name
+                    </td>
+                    <td id="tds">
+                        Image
+                    </td>
+                    <td id="tds">
+                        Email
+                    </td>
+                    <td id="tds">
+                        Number
+                    </td>
+                    <td id="tds">
+                        Age
+                    </td>
+                    <td id="tds" class="del">
+                        <button id="del_all">Delete All</button>
+                    </td>
+
+                </tr>
+            </table>
+            <table class="main-show">
+
+            </table>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
