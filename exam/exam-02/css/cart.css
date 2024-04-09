@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#btn_grp{   
+    width: max-content;
+    font-size: 20px;
+    border: 1px solid black;
+    height: fit-content;
+
+}
+#btn_grp span{
+    margin: 0 10px;
+    cursor: pointer;
+}
+#card-body{
+    width: 70%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top:1px solid black ;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+#card-body span,#card-body img{
+    width: 10%;
+}
+.main-total span{
+    
+}
+.main-total{
+    border-top: 1px solid black;
+    width: 70%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
