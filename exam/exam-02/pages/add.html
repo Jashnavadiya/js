@@ -72,14 +72,14 @@
       <div class="main-form">
         <form action="" id="some-form">
           <label for="title">Enter The Title Of Book</label>
-          <input type="text" id="title" />
+          <input type="text" id="title" required />
           <label for="img">Enter The image of Book</label>
-          <input type="url" id="img" />
+          <input type="url" id="img" required />
           <label for="price">Enter The price of Book</label>
-          <input type="number" id="price" />
+          <input type="number" id="price" required  />
           <label for="ratings">Enter The rating of Book</label>
-          <select class="form-select" id="ratings" aria-label="Default select example">
-            <option selected hidden>Open this select menu</option>
+          <select class="form-select" id="ratings" aria-label="Default select example" required>
+            <option value="0" selected hidden>Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>

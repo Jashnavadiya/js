@@ -56,7 +56,17 @@ let uimaker=()=>{
         uimaker()
     localStorage.setItem('cart', JSON.stringify(cart));
     })
-
+if(ele.qty==1){
+  m_btn.innerHTML='<i class="bi bi-trash" id="del_btn_qty"></i>'
+  m_btn.addEventListener('click',()=>{
+      cart.splice(i,1)
+      
+    localStorage.setItem('cart', JSON.stringify(cart));
+      alert('hi')
+      uimaker()
+  })
+}
+    
     btn_grp.append(m_btn,d_btn,p_btn)
     div.append(img,title,rating,price,btn_grp)
     document.querySelector('.main-body').append(div)

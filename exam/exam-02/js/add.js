@@ -18,6 +18,8 @@ console.log(isdupilcate);
 if(isdupilcate==0){
     datas.push(data);
     localStorage.setItem('books', JSON.stringify(datas));
+    window.location.href="../pages/index.html"
+    alert('Your book is added')
 }
 else{
     alert('This Named Book Already Existed')
