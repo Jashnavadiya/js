@@ -71,32 +71,36 @@ document.querySelector('.cata-head1 p').addEventListener('click', () => {
     document.querySelector('.cata-head1 p i').classList.toggle('bi-chevron-up')
     document.querySelector('.cata-memberr1').classList.toggle('cata_memeber_hide');
 })
-// document.getElementById('lth').addEventListener('click',()=>{
-//     if(document.getElementById('lth').checked){
-//         console.log("hi");
-//         document.getElementById('htl').checked=false
-//     }
+document.getElementById('lth').addEventListener('click',()=>handlPrice("lth"))
+document.getElementById('htl').addEventListener('click',()=>handlPrice("htl"))
+const handlPrice=(val)=>{
+    console.log("hi");
+    if(val=="lth"){
+       let temp= datas.sort((a,b)=>a.price-b.price)
      
-// })
-// document.getElementById('htl').addEventListener('click',()=>{
-//     if(document.getElementById('htl').checked){
-//         console.log("hi");
-//         document.getElementById('lth').checked=false
-//     }
-     
-// })
+       uimaker(temp)
+    }
+    else{
+        let temp= datas.sort((a,b)=>b.price-a.price)
+        
+        uimaker(temp)
+    }
+}
 const handleRating=()=>{
     let temp;
-    for(let i=1;i<=5;i++){
-        if(document.getElementById(`r_${i}`).checked){
-           let tempa=datas.filter((ele)=>ele.rating==i)
-           let tempo=[...tempa]
-           console.log(tempo);
-            temp.push(tempo)
+   
+    let tempa=datas.filter((ele)=>{
+        for(let i=1;i<=5;i++){
+           
+               console.log(`r_${i}`);
+                ele.rating==i
+           
+            
         }
-        
-    }
-    console.log(temp);
+       
+    })
+    
+    console.log(tempa);
     uimaker(temp)
 }
 for(let i=1;i<=5;i++){
