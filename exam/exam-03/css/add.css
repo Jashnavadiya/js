@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-form{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin:10px auto;
+}
+#some-form{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    padding: 12px 15px;
+    border-radius: 11px;
+   
+}
+input,select{
+    margin: 5px 0;
+    border-radius: 7px;
+    padding: 5px 7px;
+    outline: none;
+    
+    border: 1px solid gray;
+}
+input[type="submit"]{
+    background-color: transparent;
+    border-radius: 7px;
+   
+    outline: none;
+}
