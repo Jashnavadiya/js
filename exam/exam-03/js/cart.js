@@ -1,6 +1,6 @@
-let cart=JSON.parse(localStorage.getItem('cart'))||[];
-
-let uimaker=()=>{
+datas=JSON.parse(localStorage.getItem('books'))||[]
+cart=JSON.parse(localStorage.getItem('cart'))||[]
+let uiimaker=()=>{
     let total =0;
     document.querySelector('.main-body').innerHTML=`<div id="card-body">
     <span>Images</span><span id="title">title</span><span id="rating">rating</span
@@ -47,13 +47,13 @@ let uimaker=()=>{
     p_btn.addEventListener('click',()=>{
         ele.qty++;
         cart.splice(i,1,ele)
-        uimaker()
+        uiimaker()
     localStorage.setItem('cart', JSON.stringify(cart));
     })
     m_btn.addEventListener('click',()=>{
         ele.qty--;
         cart.splice(i,1,ele)
-        uimaker()
+        uiimaker()
     localStorage.setItem('cart', JSON.stringify(cart));
     })
 if(ele.qty==1){
@@ -63,7 +63,7 @@ if(ele.qty==1){
       
     localStorage.setItem('cart', JSON.stringify(cart));
       alert('hi')
-      uimaker()
+      uiimaker()
   })
 }
     
@@ -77,7 +77,7 @@ document.querySelector('#checkout').addEventListener('click',()=>{
     alert('you checkedout all Of your Carted books')
     cart=[];
     localStorage.setItem('cart', JSON.stringify(cart));
-    uimaker()
+    uiimaker()
 })
 }
-uimaker()
+uiimaker()

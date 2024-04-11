@@ -1,7 +1,5 @@
-
-let datas=JSON.parse(localStorage.getItem('books'))||[]
-let cart=JSON.parse(localStorage.getItem('carts'))||[]
-
+datas=JSON.parse(localStorage.getItem('books'))||[]
+cart=JSON.parse(localStorage.getItem('cart'))||[]
 
 const calc=(e)=>{
     e.preventDefault();
