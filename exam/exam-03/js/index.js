@@ -51,9 +51,6 @@ const handleRating = () => {
         uimaker(datas)
     }
 }
-
-
-
 document.getElementById(`r_1`).addEventListener('click', () => handleRating())
 document.getElementById(`r_2`).addEventListener('click', () => handleRating())
 document.getElementById(`r_3`).addEventListener('click', () => handleRating())

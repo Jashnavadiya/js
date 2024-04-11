@@ -40,6 +40,7 @@ ul,li{
     display: flex;
     flex-wrap: wrap;
 }
+
 #cata_head{
     overflow: hidden;
     z-index: 10;
@@ -53,10 +54,20 @@ ul,li{
 .cata_main{
     transition: all 0.5s;
 }
-#rating-d{
-    width: 80%;
+.rating_d{
+    width: 90%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: end;
+}
+.rating_sp{
+    width: 65%;
+    position: relative;
+}
+.rating{
+    margin: 0 0 2px 0;
+    position: relative;
 }
 #card-body{
     background-color: white;
@@ -84,10 +95,22 @@ ul,li{
     transform: scale(1.03);
 }
 #icon-star{
-    width: 50px;
+    width: 15px;
+    height: 15px;
+}
+#like_d{
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    text-align: right;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 .hidden{
     visibility: hidden;
     opacity: 0;
     transform: translateY(-10px);
+}
+.d_none{
+    display: none;
 }

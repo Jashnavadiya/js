@@ -24,7 +24,7 @@
                   </li>
                  
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="d-flex" id="Searched" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
@@ -36,16 +36,24 @@
                 <p class="main_sidebar_header"><span>Filters</span><span><i class="bi bi-funnel"></i></span></p>
                 <hr>
                 <div class="main_sidebar_contents">
-                    <ul id="cata-main">
-                        <li id="cata_head">
+                    <ul id="cata-main" class="cata-main_price">
+                        <li id="cata_head" class="cata_head_price">
                             <span>Sort By Price</span><span><i class="bi bi-chevron-up" id="cata_arrow"></i></span>
                         </li>
-                        <ul class="cata_main">
+                        <ul class="cata_main" id="cata_main_price">
                             <li id="cata_member" class="htl">High To Low</li>
-                        
                             <li id="cata_member" class="lth">Low To High</li>
                         </ul>
                     </ul>
+                    <ul id="cata-main" class="cata-main_cata">
+                      <li id="cata_head" class="cata_head_cata">
+                          <span>Sort By Categeroy</span><span><i class="bi bi-chevron-up" id="cata_arrow1"></i></span>
+                      </li>
+                      <ul class="cata_main" id="cata_main_cata">
+                         
+                          
+                      </ul>
+                  </ul>
                     
                 </div>
             </div>
