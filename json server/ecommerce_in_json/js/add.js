@@ -45,15 +45,15 @@ const calca = (e) => {
     window.open("../pages/products.html")
 }
 
-const postproduct=async(data)=>{
-    let res=await fetch('http://localhost:3000/products',{
-        method:"POST",
-        headers:{
-            "content-Type":"Application/json"
+const postproduct = async (data) => {
+    let res = await fetch('http://localhost:3000/products', {
+        method: "POST",
+        headers: {
+            "content-Type": "Application/json"
         },
-        body:JSON.stringify(data)
+        body: JSON.stringify(data)
     });
-    let datas=await res.json();
+    let datas = await res.json();
 }
 document.querySelector('.add-card').addEventListener('submit', calca)
 // document.addEventListener('DOMContentLoaded',()=>{
