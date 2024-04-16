@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#cards,#card_header{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    width: calc((11*100%)/12);
+    padding: 10px 0
+}
+#card_header{
+    padding-bottom: 20px;
+}
+#cards p,#card_header p{
+    width: calc(100%/22);
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+}
+#cards div,#card_header div{
+    width: calc(100%/10);
+    text-align: center;
+    padding: 5px 0;
+}
+#cards div i{
+    cursor: pointer;
+}
+
+#btn_grp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
