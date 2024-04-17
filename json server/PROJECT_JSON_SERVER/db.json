@@ -1,3 +1,14 @@
 {
-  "Users":[]
+  "Users": [
+    {
+      "id": "c355",
+      "un": "a",
+      "email": "a@a.a",
+      "pass": "Asdf@1234"
+    },
+    {
+      "id": "34af",
+      "isTrusted": true
+    }
+  ]
 }
