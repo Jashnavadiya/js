@@ -12,8 +12,11 @@ const regex_valid=(data)=>{
 
     regex_email(remail)
     regex_un(run)
-    regex_pass(run,remail,rpass,data)
-    
+    regex_pass(rpass)
+    if((document.getElementById('password').value==document.getElementById('c_pass').value)&&(!run&&remail&&rpass)){
+        console.log(data);
+        document.getElementById('main_form').addEventListener('submit',()=>postUser(data))
+                    }
 }
 function regex_email(remail){
     if(remail){
@@ -35,16 +38,13 @@ function regex_un(run){
     }
 }
 
-function regex_pass(run,remail,rpass,data){
+function regex_pass(rpass){
     if(rpass){
         document.getElementById('password').classList.remove('is-invalid')
         document.getElementById('password').classList.add('is-valid')
         if(document.getElementById('password').value==document.getElementById('c_pass').value){
             
-            if(!run&&remail&&rpass){
-               
-document.getElementById('main_form').addEventListener('submit',()=>postUser(data))
-            }
+            
             document.getElementById('c_pass').classList.remove('is-invalid')
             document.getElementById('c_pass').classList.add('is-valid')
         }
@@ -63,10 +63,10 @@ document.getElementById('main_form').addEventListener('submit',()=>postUser(data
 }
 const hi=()=>{
     
-document.getElementById('username').addEventListener('input',isexisted)
-document.getElementById('password').addEventListener('input',regex_valid)
-document.getElementById('email').addEventListener('input',isexisted)
-document.getElementById('c_pass').addEventListener('input',regex_valid)
+document.getElementById('username').addEventListener('input',calc)
+document.getElementById('password').addEventListener('input',calc)
+document.getElementById('email').addEventListener('input',calc)
+document.getElementById('c_pass').addEventListener('input',calc)
 }
 // (() => {
 //     'use strict'
@@ -98,20 +98,17 @@ const calc=(e)=>{
         isexisted(user)
     }
 const isexisted=async (data)=>{
-    let res1=await fetch(`http://localhost:3000/Users?email=${data.email}`)
-    let isEmail=await res1.json();
-    console.log(isEmail);
-    let res2=await fetch(`http://localhost:3000/Users?un=${data.un}`)
+    let res2=await fetch(`http://localhost:3000/Users?un=${document.getElementById('username').value}`)
     let isUn=await res2.json()
-    hi()
+    let res1=await fetch(`http://localhost:3000/Users?email=${document.getElementById('email').value}`)
+    let isEmail=await res1.json();
     if(isUn.length>0){
-        alert('This Username Already Existed')
         regex_un(true)
         hi()
     }
     else if(isEmail.length>0){
-        alert('This Email Already Existed')
         regex_email(false)
+        regex_un(false)
         hi()
     }
     
