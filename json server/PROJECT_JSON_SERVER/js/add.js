@@ -7,14 +7,13 @@ const get=async()=>{
     let data = await res.json()
     ui(data)
 }
-
 const ui=(data)=>{
 
     document.getElementById('category').innerHTML=`<option value="" hidden selected>Select Category</option>`
     data.map((ele)=>{
         let opt=document.createElement('option');
         opt.innerHTML=ele
-
+        opt.setAttribute()
         document.getElementById('category').append(opt)
     })
 
@@ -29,10 +28,8 @@ const cal=(e)=>{
         price:document.getElementById('price').value,
         category:document.getElementById('category').value,
     }
+    
     console.log(data);
 }
 document.getElementById('mainform').addEventListener('submit',cal)
 
-const addcate=()=>{
-    let 
-}
