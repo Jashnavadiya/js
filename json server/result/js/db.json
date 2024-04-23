@@ -1,24 +1,3 @@
 {
-  "data": [
-    {
-      "id": "b7ec",
-      "name": "i",
-      "roll": "1",
-      "maths": 1,
-      "phy": 1,
-      "che": 102,
-      "com": 100,
-      "eng": 1
-    },
-    {
-      "id": "6e4d",
-      "name": "1",
-      "roll": "1",
-      "maths": 1,
-      "phy": 1,
-      "che": 1,
-      "com": 1,
-      "eng": 1
-    }
-  ]
+  "data": []
 }
