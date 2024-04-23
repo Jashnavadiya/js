@@ -20,7 +20,7 @@ const NavBar=()=>{
           <a class="nav-link" href="../pages/signup.html">Signup</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/add.html">Add Product</a>
+          <a class="nav-link" href="../admin/addproduct.html">Add Product</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../pages/cart.html">Cart</a>

@@ -1,4 +1,5 @@
 import ce from "../components/component.js";
+import DelData from "../components/del.js";
 import GetData from "../components/get.js";
 import NavBar from "../components/navbar.js";
 import PostData from "../components/post.js";
@@ -28,10 +29,15 @@ const ui=(data)=>{
     data.map((ele,i)=>{
          let Cate=document.createElement('p');
         Cate.innerHTML=`<span>${i+1}</span>`+`<span>${ele.cate}</span>`;
-        Cate.setAttribute('id',"Category")
+        Cate.setAttribute('id',"Categoryy")
+        let del_btn= document.createElement('button');
+        del_btn.innerHTML="DELETE"
+        del_btn.addEventListener('click',async()=>{
+             DelData(`http://localhost:3000/Cate/${ele.id}`)
+             get()
+        })
         
-
-        document.querySelector('.main-result').append(Cate)
+        document.querySelector('.main-result').append(Cate,del_btn)
     })
 }
 const get=async()=>{
