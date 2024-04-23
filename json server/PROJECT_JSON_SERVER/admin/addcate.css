@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#Categoryy{
+    display: flex;
+    justify-content: space-between; 
+    width: 5%;
+ }
+ .main-body{
+     width: 90%;
+     margin-left: auto;
+ }
+ .main-sidebar{
+     width: 10%;
+ } #Categoryy{
+    display: flex;
+    justify-content: space-between; 
+    width: 5%;
+ }
+ .main-body{
+     width: 90%;
+     margin-left: auto;
+ }
+ .main-sidebar{
+     width: 10%;
+ }
