@@ -10,7 +10,7 @@ try {
     let dataa=await res.json();
     window.location.href="../pages/cart.html"
 } catch (error) {
-    PostData(url,data)
+    PostData(url,{...data,qty:1})
 }
 
 
