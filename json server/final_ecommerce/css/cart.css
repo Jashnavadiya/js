@@ -1,0 +1,207 @@
+* {
+    font-weight: 400;
+}
+
+.main-body {
+    background-color: red;
+    margin-top: 6.5%;
+}
+
+#banner-img {
+    height: 60vh;
+}
+
+#banner_btn {
+    border-radius: 7px;
+    padding: 10px 15px;
+    background-color: transparent;
+    width: 70%;
+    margin: auto;
+    transition: all 0.5s;
+    border: 1px solid black;
+}
+
+#banner_btn:hover {
+    background-color: black;
+    color: #f8f8f8;
+}
+
+#banner-div {
+    width: max-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-content_body {
+    text-align: center;
+}
+
+#floatingInput {
+    border-radius: 5px 0px 0 5px;
+    width: 65%;
+
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+    height: calc(2.5rem + calc(var(--bs-border-width)* 2));
+    min-height: calc(2.5rem + calc(var(--bs-border-width)* 2));
+}
+
+.form-floating>.form-control-plaintext:focus,
+.form-floating>.form-control-plaintext:not(:placeholder-shown),
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown) {
+    padding-top: 1.6rem;
+    padding-bottom: .625rem;
+}
+
+.promo-div {
+    display: flex;
+}
+
+#promo>label {
+    font-size: 12px;
+}
+
+.form-floating>label {
+    padding: 0.5rem 0 0 0.5rem;
+    height: min-content;
+}
+
+#promo-sub {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 2px 40px;
+    border-radius: 0 5px 5px 0;
+}
+
+#promo {
+    background-color: azure;
+    text-align: left;
+}
+
+.count-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 7px;
+}
+
+.count-bold {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+#checkout_btn {
+    background-color: yellow;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 13px 70px;
+}
+
+.qty {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: max-content;
+}
+
+.qty_s {
+    margin: 0 6px;
+}
+
+.qty button {
+    border: none;
+    outline: none;
+    color: black;
+    background-color: transparent;
+}
+
+
+#info,
+.price,
+.main-qty,
+.price-total {
+    height: 100%;
+}
+
+#img_s_produt {
+    max-width: 250px;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.card-body {
+    max-height: 30vh;
+    width: 95%;
+    margin-left: auto;
+    padding: 10px 20px;
+    display: flex;
+    border-top: 1px solid gray;
+    border-collapse: collapse;
+    justify-content: space-between;
+}
+
+.result-total {
+    width: 95%;
+    margin-left: auto;
+    border-top: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.main-result-total {
+    width: 80%;
+    margin-left: auto;
+    margin-right: 2%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#info {
+    text-align: left;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.main-img-info {
+    display: flex;
+}
+
+#info h5 {
+    font-size: 15px;
+    color: rgb(130, 130, 130);
+}
+
+#info h3,
+.price h5 {
+    color: black;
+    font-size: 17px;
+}
+
+.price h3,
+.header-qty,
+.price-total h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: rgb(80, 80, 80);
+    font-weight: 400;
+
+}
+.price{
+    width: 140px;
+}
+
+.main-content-cart-body {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}

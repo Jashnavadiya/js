@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Sasta Bazar</title>
+</head>
+
+<body class="bg-body-tertiary">
+
+
+    <div class="main-loader">
+        <span class="loader">
+            <span class="loader-inner">
+            </span>
+        </span>
+    </div>
+
+
+    <div class="main-nav bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid ">
+                <img class="navbar-brand nav-img-logo ms-4"
+                    src="../imges/sasta-bazar-high-resolution-logo-black-transparent.svg"></img>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-underline ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../pages/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item addproduct_nav">
+                            <a class="nav-link" href="../pages/add.html">Add Products</a>
+                        </li>
+                        <li class="nav-item logins">
+                            <a class="nav-link" href="../pages/signup.html">SignUp</a>
+                        </li>
+                        <li class="nav-item loginss">
+                            <a class="nav-link" href="../pages/login.html">Login </a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex " id="search_inputs" role="search">
+
+
+                        <div class="outer6">
+                            <div class="middle6">
+                                <div class="cl6">
+                                    <input class="search-bar-header bg-body-tertiary py-2 ms-3" id="main-Search"
+                                        type="search" placeholder="Search" aria-label="Search">
+                                </div>
+                            </div>
+                            <span class="hi ps-3 py-2"><i class="bi bi-search"></i></span>
+
+                            <span class="Cart_icon_header ps-3 py-2"><a href="../pages/cart.html"><i
+                                        class="bi bi-cart"></i></a></span>
+                            <span class="profile_icons ps-3 py-2"><i class="bi bi-person-fill fa-lg"></i>
+                                <div class="profile_icon_dropdown">
+                                    <span>Profile</span>
+                                    <hr>
+                                    <span id="logout_btn">
+                                        <span>Logout</span> <i class="bi bi-box-arrow-in-right"></i>
+                                    </span>
+                                </div>
+                            </span>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="sidebar_main">
+        <div class="main_sidebar">
+            <h2>Filters</h2>
+            <hr>
+            <div class="cata">
+                <ul class="cata-main">
+                    <li class="cata-head">
+                        <p> <span>Catagory</span> <i class="bi bi-chevron-up "></i></p>
+                        <ul class="cata-memberr">
+                            <li class="cata-member">
+                                <p id="Sorting_tech">Technology</p>
+                            </li>
+                            <li class="cata-member">
+                                <p id="Sorting_fashion">Fashion</p>
+                            </li>
+                            <li class="cata-member">
+                                <p id="Sorting_home_appliance"> Home Appliance</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cata-head1">
+                        <p> <span>Sort By price</span> <i class="bi bi-chevron-up "></i></p>
+                        <ul class="cata-memberr1">
+                            <li class="cata-member">
+                                <input type="checkbox" name="" id="htl"><label for="htl">High To Low</label>
+                            </li>
+                            <li class="cata-member"> <input type="checkbox" name="" id="lth"><label for="lth">Low To High</label>
+                            </li>
+                            
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="main-card-body">
+            <div class="main-body-header">
+                <h2 class="WhatisGoingon">Products</h2>
+                <hr>
+                <div class="sorting-header-main">
+                    <div id="icon_Filter"><i class="bi bi-filter icon_Filter"></i></div>
+                    <select class="sorting-header">
+                        <option selected hidden value="0">Sort By:</option>
+                        <option id="Sorting_all" value="All">All</option>
+                        <option id="Sorting_tech" value="Technology">Technology</option>
+                        <option id="Sorting_fashion" value="Fashion">Fashion</option>
+                        <option id="Sorting_home_appliance" value="Home_appliance">Home appliance</option>
+                    </select>
+                </div>
+            </div>
+            <div class="result">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-logout">
+    </div>
+</body>
+<script src="../js/loader.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/products.js" type="module"></script>
+
+</html>

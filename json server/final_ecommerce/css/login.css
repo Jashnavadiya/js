@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+body {
+    position: relative;
+}
+#Main-form {
+    width: 75%;
+    margin: auto;
+    transform: translateY(40%);
+}
+
+.form-label {
+    font-weight: 350;
+}
+input[type="text"]:focus{
+    
+    outline: none;
+}
+
+.form-control {
+    font-weight: 300;
+    border: none;
+    background-color: #f8f9fa;
+    border-radius: 0;
+    border-bottom: 0.5px solid gray;
+}
+#signup_btn{
+    padding:10px 20px ;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: none;
+     border-radius: 11px;
+}
+#signup_btn:focus{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0.1px 0.4px;
+}
+.or_sec hr{
+    width: 45%;
+}
+.or_sec span{
+    display: block;
+    width:10% ;
+    text-align: center;
+}
+.or_sec{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    transform: translateY(450%);
+}
