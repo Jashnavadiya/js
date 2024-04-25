@@ -35,10 +35,8 @@ const calca = (e) => {
         }
         console.log(product);
         isExisted(product)
-   
 }
 document.querySelector('.add-card').addEventListener('submit', calca)
-
 
 document.getElementById('img').addEventListener('change',()=>{
     imgs=[]

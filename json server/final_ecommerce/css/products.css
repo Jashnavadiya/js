@@ -96,9 +96,9 @@ body {
     transition: all 0.5s;
 }
 #s-card:hover{
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     cursor: pointer;
-     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 3px 0px, rgba(60, 64, 67, 0.15) 0px 7px 6px 2px;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 3px 0px, rgba(60, 64, 67, 0.15) 0px 5px 6px 2px;
 }
 #s-title {
     margin-top: 17px;
@@ -149,7 +149,7 @@ body {
     width: 10%;
 }
 .img_card_hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
     transition: transform 0.5s;
 }
 
