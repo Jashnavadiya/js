@@ -1,4 +1,5 @@
 import GetData from "../components/get.js";
+import PostData from "../components/post.js";
 
 const reader = new FileReader();
 const display = (hello) => {
@@ -6,7 +7,18 @@ const display = (hello) => {
     document.querySelector('.result').innerHTML = "";
     hello.map((ele, i) => {
         let img = document.createElement('img');
-        img.src = ele.img;
+        img.src = ele.img[0];
+
+        if(ele.img.length>1){
+            img.addEventListener('mouseenter',()=>{
+                img.src=ele.img[1];
+                img.classList.toggle('img_card_hover')
+            })
+            img.addEventListener('mouseleave',()=>{
+                img.src=ele.img[0];
+                img.classList.toggle('img_card_hover')
+            })
+        }
         img.setAttribute('id', 's-img');
 
         let title = document.createElement('p');
@@ -18,37 +30,29 @@ const display = (hello) => {
         deca.setAttribute('id', 's-deca');
 
         let price = document.createElement('p');
-        price.innerHTML = ele.price;
+        price.innerHTML = "₹" +ele.price+`<s><span id="s_discount">${ele.price}</span></s>`;
         price.setAttribute('id', 's-price');
 
-        let btn_group = document.createElement('div');
-        btn_group.setAttribute('id', "btns_grp");
-        let btn1 = document.createElement('button');
-        btn1.setAttribute('id', 'add_cart');
-        btn1.innerHTML = "Add to Cart"
-        btn1.addEventListener("click", () => {
-            let iscarted = cart.filter((fila) => fila.title == ele.title);
+        // let btn_group = document.createElement('div');
+        // btn_group.setAttribute('id', "btns_grp");
+        // let btn1 = document.createElement('button');
+        // btn1.setAttribute('id', 'add_cart');
+        // btn1.innerHTML = "Add to Cart"
+        // btn1.addEventListener('click', () => {
+        //     isCarted(ele)
+        // })
 
-            if (iscarted.length > 0) {
-                window.location.href="../pages/cart.html"
-            }
-            else {
-                let carts = { ...ele, qty: 1 }
-                console.log(carts);
-                cart.push(carts)
-                localStorage.setItem('cart', JSON.stringify(cart))
-            }
-        })
+        // let btn2 = document.createElement('button');
+        // btn2.setAttribute('id', 'buy_now');
+        // btn2.innerHTML = "Buy Now"
 
-        let btn2 = document.createElement('button');
-        btn2.setAttribute('id', 'buy_now');
-        btn2.innerHTML = "Buy Now"
-
-        btn_group.append(btn1, btn2)
+        // btn_group.append(btn1, btn2)
         let card = document.createElement('div');
         card.setAttribute('id', 's-card');
-        card.append(img, title, deca, price, btn_group)
-
+        card.append(img, title, deca, price)
+        card.addEventListener('click',()=>{
+            
+        })
         document.querySelector('.result').append(card)
     })
 }
@@ -82,3 +86,15 @@ const get=async()=>{
     display(res)
 }
 get()
+const isCarted=async(data)=>{
+    try {
+        let res=await fetch(`http://localhost:3000/cart/${data.id}`)
+        let datas=await res.json()
+        window.location.href="../pages/cart.html"
+    } catch (error) {
+        console.log(error);
+        PostData('http://localhost:3000/cart',{...data,qty:1})
+        
+    };
+
+}

@@ -40,8 +40,8 @@ body {
 }
 
 .main-card-body {
-    width: 79%;
-    margin: 29px 0 0 auto;
+    width: 76%;
+    margin: 29px 15px 0 auto;
     padding: 20px 0;
     transition: all 0.5s
 }
@@ -93,8 +93,13 @@ body {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     padding: 15px 20px;
     border-radius: 15px;
+    transition: all 0.5s;
 }
-
+#s-card:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 3px 0px, rgba(60, 64, 67, 0.15) 0px 7px 6px 2px;
+}
 #s-title {
     margin-top: 17px;
 }
@@ -105,6 +110,9 @@ body {
     width: 85%;
     height: 230px;
     object-fit: contain;
+}
+#s-deca{
+    margin: 0;
 }
 
 
@@ -140,6 +148,10 @@ body {
 .shorting-header {
     width: 10%;
 }
+.img_card_hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
 
 #btns_grp {
     width: 85%;
@@ -172,7 +184,8 @@ body {
     }
 
     .main-card-body {
-        width: 100%;
+        width: 95%;
+        margin: auto;
     }
 
     .sidebar_main {
@@ -190,7 +203,9 @@ body {
     .main-body-header hr {
         width: 40%;
     }
-
+    .sorting-header{
+        display: none;
+    }
 
 }
 
@@ -201,7 +216,8 @@ body {
     }
 
     .main-card-body {
-        width: 100%;
+        width: 95%;
+        margin: auto;
     }
 
     .sidebar_main {
@@ -210,6 +226,9 @@ body {
 
     .main-body-header hr {
         width: 50%;
+    }
+    .sorting-header{
+        display: none;
     }
 }
 
@@ -223,7 +242,8 @@ body {
     }
 
     .main-card-body {
-        width: 100%;
+        width: 95%;
+        margin: auto;
     }
 
     .sidebar_main {
@@ -248,6 +268,6 @@ body {
 
 @media(min-width:1400px) {
     #s-card {
-        width: 22%;
+        width:29%;
     }
 }
