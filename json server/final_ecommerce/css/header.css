@@ -23,7 +23,8 @@ body {
 }
 
 .nav-img-logo {
-    width: 70px;
+    max-height: 60px;
+    padding: 0;
 }
 
 .nav-underline .nav-link.active,
@@ -135,7 +136,7 @@ body {
 .logout_btns button {
     min-width: 90%;
     
-    margin: 5px auto;
+    margin: 0px auto;
     font-size: 17px;
     padding: 5px 15px;
     border-radius: 100px;

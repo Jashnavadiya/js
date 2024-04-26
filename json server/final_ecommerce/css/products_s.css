@@ -3,6 +3,131 @@
     padding: 0;
     box-sizing: border-box;
 }
-.main-body{
-    margin: 100px;
+h1,h2,h3,h4,h5,h6{
+    font-weight: 350;
 }
+.main-body{
+    margin: 10vh auto 0;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    
+}
+.main-content-show{
+    width: 40%;
+    margin-top: 70px;
+}
+.main-amounts{
+    margin: 5vh 0;
+}
+.main-disc{
+    width: 20%;
+}
+.main-disc,.main-amounts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-amounts s{
+    color: gray;
+}
+.main-img-show{
+    width: 60%;
+    padding: 0 50px 0 0 ;
+}
+.disc_div{
+    border-radius: 11px;
+    border: 1px solid gray;
+    width: max-content;
+    padding: 0px 5px;
+}
+
+
+.main-checkout{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 18px 0;
+}
+.qty {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: max-content;
+    padding: 5px 0;
+    border-radius: 7px;
+}
+
+.qty button {
+    margin: 0 10px ;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: transparent;
+}
+#checkout_btn{
+    padding: 5px 40%;
+    
+    border-radius: 7px;
+    border: 1px solid #030303;
+    outline: none;
+    background: none;
+    transition: all 0.5s;
+}
+#checkout_btn:hover{
+    background-color: #030303;
+
+    border: 1px solid #030303;
+    color: rgb(224, 222, 222);
+}
+.main_chek_btn{
+    width: 80%;
+    margin-left: auto;
+}
+/* --------------------------------------------------------------------------- */
+.carousel {
+    position: relative;
+  }
+  .carousel-item img {
+    object-fit: cover;
+  }
+  #carousel-thumbs {
+    background: rgba(255,255,255,.3);
+    bottom: 0;
+    left: 0;
+    padding: 0 50px;
+    right: 0;
+  }
+  #carousel-thumbs img {
+    border: 5px solid transparent;
+    cursor: pointer;
+  }
+  #carousel-thumbs img:hover {
+    border-color: rgba(255,255,255,.3);
+  }
+  #carousel-thumbs .selected img {
+    border-color: #fff;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+  }
+  .carousel-control-prev i,
+  .carousel-control-next i{
+    color: black;
+  }
+  @media all and (max-width: 767px) {
+    .carousel-container #carousel-thumbs img {
+      border-width: 3px;
+    }
+  }
+  @media all and (min-width: 576px) {
+    .carousel-container #carousel-thumbs {
+      position: absolute;
+    }
+  }
+  @media all and (max-width: 576px) {
+    .carousel-container #carousel-thumbs {
+      background: #ccccce;
+    }
+  }
