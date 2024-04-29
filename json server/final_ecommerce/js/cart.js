@@ -104,7 +104,7 @@ const ui = (data) => {
         info.setAttribute('id', 'info')
 
         let info_h3 = document.createElement('h3');
-        info_h3.innerHTML = ele.title
+        info_h3.innerHTML = ele.title.substr(0, 10) + '...'
 
         let info_h5_1 = document.createElement('h5');
         if (ele.desc.length > 10) {

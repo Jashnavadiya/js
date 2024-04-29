@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
@@ -60,8 +61,8 @@
                         <div class="outer6">
                             <div class="middle6">
                                 <div class="cl6">
-                                    <input class="search-bar-header bg-body-tertiary py-2 ms-3" id="main-Search" type="search"
-                                        placeholder="Search" aria-label="Search">
+                                    <input class="search-bar-header bg-body-tertiary py-2 ms-3" id="main-Search"
+                                        type="search" placeholder="Search" aria-label="Search">
                                 </div>
                             </div>
                             <span class="hi ps-3 py-2"><i class="bi bi-search"></i></span>
@@ -85,6 +86,46 @@
         </nav>
     </div>
     <div class="main-body bg-body-tertiary">
+        <div class="container-1">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../imges/slide-01.jpg.webp" alt="">
+                        <div class="slider-1">
+                            <p class="slider-1-1">
+                                Men Collection 2024
+                            </p>
+                            <p class="slider-1-2">New ARRIVALS</p>
+                            <p class="slider-1-3"><button id="Shop_slider_btn">SHOP NOW</button></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../imges/slide-02.jpg.webp" alt="">
+                        <div class="slider-2">
+                            <p class="slider-1-1">
+                                Men Collection 2024
+                            </p>
+                            <p class="slider-1-2">New ARRIVALS</p>
+                            <p class="slider-1-3"><button id="Shop_slider_btn">SHOP NOW</button></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../imges/slide-03.jpg" alt="">
+                        <div class="slider-3">
+                            <p class="slider-3-1">
+                                Men Collection 2024
+                            </p>
+                            <p class="slider-3-2">NEW ARRIVALS</p>
+                            <p class="slider-3-3"><button id="Shop_slider_btn">SHOP NOW</button></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
     </div>
     <div class="main-logout">
         <h1 class="logout-cancel"><i class="bi bi-x cancel_btn_logout"></i></h1>
@@ -101,9 +142,22 @@
     </div>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
 <script src="../js/loader.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/logout_temp.js"></script>
+
 <script src="../js/index.js"></script>
 <script src="../js/header.js"></script>
 

@@ -92,15 +92,3 @@ const get=async()=>{
     document.getElementById('Sorting_tech').addEventListener('submit',()=>sorting())
 }
 get()
-const isCarted=async(data)=>{
-    try {
-        let res=await fetch(`http://localhost:3000/cart/${data.id}`)
-        let datas=await res.json()
-        window.location.href="../pages/cart.html"
-    } catch (error) {
-        console.log(error);
-        PostData('http://localhost:3000/cart',{...data,qty:1})
-        
-    };
-
-}
