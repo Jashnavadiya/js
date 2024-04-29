@@ -26,7 +26,12 @@ const display = (hello) => {
         title.setAttribute('id', 's-title');
 
         let deca = document.createElement('p');
-        deca.innerHTML = ele.desc;
+        if (ele.desc.length > 20) {
+            deca.innerHTML = ele.desc.substr(0, 20) + '...';
+        }
+        else {
+            deca.innerHTML = ele.desc
+        }
         deca.setAttribute('id', 's-deca');
 
         let price = document.createElement('p');
@@ -51,7 +56,7 @@ const display = (hello) => {
         card.setAttribute('id', 's-card');
         card.append(img, title, deca, price)
         card.addEventListener('click',()=>{
-            
+            window.location.href=`../pages/products_s.html?id=${ele.id}`
         })
         document.querySelector('.result').append(card)
     })
@@ -84,6 +89,7 @@ document.querySelector('.cata-head1 p').addEventListener('click', () => {
 const get=async()=>{
     let res=await GetData("http://localhost:3000/products")
     display(res)
+    document.getElementById('Sorting_tech').addEventListener('submit',()=>sorting())
 }
 get()
 const isCarted=async(data)=>{

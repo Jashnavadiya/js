@@ -104,8 +104,13 @@
     outline: none;
     border-radius: 7px;
     padding: 13px 70px;
+    
+    box-shadow: 0px 3px 2px #dcc603; 
 }
-
+#checkout_btn:active{
+    box-shadow: 0 0;
+    transform: translateY(3px);
+}
 .qty {
     display: flex;
     flex-direction: row;
@@ -133,8 +138,8 @@
 }
 
 #img_s_produt {
-    max-width: 250px;
-    max-height: 300px;
+    max-width: 80px;
+    max-height: 80px;
     object-fit: contain;
 }
 

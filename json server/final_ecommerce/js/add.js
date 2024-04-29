@@ -31,6 +31,7 @@ const calca = (e) => {
     price: parseFloat(document.getElementById('price').value),
     desc: document.getElementById('desc').value,
     cata: document.getElementById('cata').value,
+    qtyy:1,
     img: imgs
   }
   console.log(product);
