@@ -20,12 +20,17 @@ const ui = (dataa) => {
     if(document.querySelector('.heart_hi').classList.contains('bi-heart')){
         document.querySelector('.heart_hi').classList.remove('bi-heart')
         document.querySelector('.heart_hi').classList.add('bi-heart-fill')
+        document.querySelector('.popup_msg').innerHTML=`You Added This To Your Whishlist...`
     }
     else{
         document.querySelector('.heart_hi').classList.remove('bi-heart-fill')
         document.querySelector('.heart_hi').classList.add('bi-heart')
-    
+        document.querySelector('.popup_msg').innerHTML=`You Remove This To Your Whishlist...`
     }
+    document.querySelector('.main_popup_msg').classList.add('trans-popup')
+    setTimeout(()=>{
+        document.querySelector('.main_popup_msg').classList.remove('trans-popup')
+    },1500)
 
 })
     document.querySelector('.main_cate_product').innerHTML = dataa.cata;

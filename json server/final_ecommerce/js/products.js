@@ -9,13 +9,13 @@ const display = (hello) => {
         let img = document.createElement('img');
         img.src = ele.img[0];
 
-        if(ele.img.length>1){
-            img.addEventListener('mouseenter',()=>{
-                img.src=ele.img[1];
+        if (ele.img.length > 1) {
+            img.addEventListener('mouseenter', () => {
+                img.src = ele.img[1];
                 img.classList.toggle('img_card_hover')
             })
-            img.addEventListener('mouseleave',()=>{
-                img.src=ele.img[0];
+            img.addEventListener('mouseleave', () => {
+                img.src = ele.img[0];
                 img.classList.toggle('img_card_hover')
             })
         }
@@ -35,7 +35,7 @@ const display = (hello) => {
         deca.setAttribute('id', 's-deca');
 
         let price = document.createElement('p');
-        price.innerHTML = "₹" +ele.price+`<s><span id="s_discount">${ele.price}</span></s>`;
+        price.innerHTML = "₹" + ele.price + `<s><span id="s_discount">${ele.price}</span></s>`;
         price.setAttribute('id', 's-price');
 
         // let btn_group = document.createElement('div');
@@ -55,8 +55,8 @@ const display = (hello) => {
         let card = document.createElement('div');
         card.setAttribute('id', 's-card');
         card.append(img, title, deca, price)
-        card.addEventListener('click',()=>{
-            window.location.href=`../pages/products_s.html?id=${ele.id}`
+        card.addEventListener('click', () => {
+            window.location.href = `../pages/products_s.html?id=${ele.id}`
         })
         document.querySelector('.result').append(card)
     })
@@ -85,21 +85,21 @@ document.querySelector('.cata-head1 p').addEventListener('click', () => {
     document.querySelector('.cata-head1 p i').classList.toggle('bi-chevron-up')
     document.querySelector('.cata-memberr1').classList.toggle('cata_memeber_hide');
 })
-const sorting=async(hiii)=>{
+const sorting = async (hiii) => {
     console.log(hiii);
-    let res= await GetData(`http://localhost:3000/products/?cata=${hiii}`)
-    let dataas= await res
-   console.log(dataas);
-   display(dataas)
+    let res = await GetData(`http://localhost:3000/products/?cata=${hiii}`)
+    let dataas = await res
+    console.log(dataas);
+    display(dataas)
 }
-const get=async()=>{
-    let res=await GetData("http://localhost:3000/products")
-    document.getElementById('Sorting_tech').addEventListener('click',()=>sorting("tech"))
-    document.getElementById('Sorting_fashion').addEventListener('click',()=>sorting("Fashion"))
-    document.getElementById('Sorting_home_appliance').addEventListener('click',()=>sorting("Home_appliance"))
-    let data=JSON.parse(sessionStorage.getItem('Searh'))||res;
+const get = async () => {
+    let res = await GetData("http://localhost:3000/products")
+    document.getElementById('Sorting_tech').addEventListener('click', () => sorting("tech"))
+    document.getElementById('Sorting_fashion').addEventListener('click', () => sorting("Fashion"))
+    document.getElementById('Sorting_home_appliance').addEventListener('click', () => sorting("Home_appliance"))
+    let data = JSON.parse(sessionStorage.getItem('Search')) || res;
+    console.log(data);
     display(data)
-    sessionStorage.setItem('Search',JSON.stringify());
 }
 
 get()
