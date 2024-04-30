@@ -1,7 +1,5 @@
+import GetData from "../components/get.js";
 
-
-let products= JSON.parse(localStorage.getItem("Store"))||[];
-console.log(products);
 document.querySelector('.main-logout').innerHTML=`
 <h1 class="logout-cancel"><i class="bi bi-x cancel_btn_logout"></i></h1>
         <div class="logout-card">
@@ -80,20 +78,24 @@ document.querySelector('.logout_button_accept').addEventListener('click', () => 
 })
 document.getElementById('logout_btn').addEventListener('click', () => { temp() })
 
-const Search=(hi)=>{
 
-   let hii= products.filter((ele) => ele.title.includes(hi));
-   console.log(hii);
-   sessionStorage.setItem('Search',JSON.stringify(hii));
-   
-   window.location.href="../pages/products.html"
-}
-const handleSearch=(e)=>{
-    e.preventDefault();
-    let hi=document.getElementById('main-Search').value;
-    Search(hi);
-}
-
-document.getElementById('search_inputs').addEventListener("submit",handleSearch)
+const Search=async(hi)=>{
+   let res=await GetData('http://localhost:3000/products')
+    let s_data=await res
+    console.log(s_data);
+    let hii= s_data.filter((ele) => ele.title.includes(hi));
+    console.log(hii);
+    sessionStorage.setItem('Search',JSON.stringify(hii));
+    
+    window.location.href="../pages/products.html"
+ }
+ const handleSearch=(e)=>{
+     e.preventDefault();
+     let hi=document.getElementById('main-Search').value;
+     Search(hi);
+     console.log(hi);
+ }
+ 
+ document.getElementById('search_inputs').addEventListener("submit",handleSearch)
 
 temp()

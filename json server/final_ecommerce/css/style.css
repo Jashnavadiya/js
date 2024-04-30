@@ -8,6 +8,9 @@
 body {
     position: relative;
 }
+.main-nav{
+  box-shadow: none;
+}
 
 /* ============================================================= */
 html,
@@ -48,20 +51,25 @@ body {
 .swiper-slide{
     position: relative;
 }
-.slider-3{
+.slider-3,.slider-2,.slider-1{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     top: 0;
     left: 0;
     right: 0;
     bottom:0;
-    transform: translate(-20%,30%);
+    transform: translate(0%,40%);
+    width: 50%;
 }
 .main-body{
-    margin-top: 9vh;
 }
 #Shop_slider_btn{
 border: 1px solid black;
 outline: none;
+background: transparent;
 padding: 6px 11px;
 border-radius: 11px;
 transition: all 0.5s;
@@ -69,11 +77,112 @@ transition: all 0.5s;
 #Shop_slider_btn:hover{
     background-color: black;
     color: #f8f8f8;
+    
 }
-.slider-3-1{
+.slider-3-1,.slider-2-1,.slider-1-1{
     font-size: 22px;
+    visibility: hidden;
 }
-.slider-3-2{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 44px;
+.slider-3-2,.slider-2-2,.slider-1-2{
+    font-family: 'DM Serif Display';
+    font-size: 64px;  
+    width: max-content;
+    visibility: hidden;
+}
+.slider-3-3,.slider-2-3,.slider-1-3{
+  font-size: large;
+  visibility: hidden;
+}
+
+
+
+
+.slide-3-1-1,.slide-2-1-1{
+  visibility: visible;
+  animation: 1s ease-out 0s 1 slide-3-1;
+}
+.slide-1-1-1{
+  visibility: visible;
+  animation: 1s ease-out 0s 1 slide-1-1;
+}
+.slide-3-2-1,.slide-2-2-1{
+  visibility: visible;
+  animation: 1s ease-out 0s 1 slide-3-2;
+}
+.slide-1-2-1{
+  visibility: visible;
+  animation: 1s ease-out 0s 1 slide-1-2;
+}
+.slide-3-3-1,.slide-2-3-1{
+  visibility: visible;
+  animation: 1s ease-out 0s 1 slide-3-3;
+}
+.slide-1-3-1{
+  visibility: visible;
+  animation: 1s ease-out 0s 1 slide-1-3;
+}
+@keyframes slide-1-1 {
+  0% {
+    transform: rotate(0deg) translatey(-100px) ;
+  }
+  100% {
+
+    transform: rotate(0deg) translatey(00px) ;
+  }
+}
+@keyframes slide-1-2 {
+  0% {
+    transform: rotate(0deg) translatey(200px) ;
+  }
+  100% {
+
+    transform: rotate(0deg) translatey(00px) ;
+  }
+}
+@keyframes slide-1-3 {
+  0% {
+    transform: scale(0)
+  }
+  100% {
+
+    transform: scale(1)
+  }
+}
+
+
+
+
+
+@keyframes slide-3-1 {
+  0% {
+    transform: rotate(-70deg) translatey(-200px) ;
+  }
+  100% {
+
+    transform: rotate(0deg) translatey(00px) ;
+  }
+}
+@keyframes slide-3-2 {
+  0% {
+    transform: rotate(-70deg) translatey(200px) ;
+  }
+  100% {
+    transform: rotate(0deg) translatey(0px) ;
+  }
+}
+@keyframes slide-3-3{
+  0% {
+    transform: rotate(-180deg) translatey(0px) ;
+  }
+  100% {
+    transform: rotate(0deg) translatey(0px) ;
+  }
+}
+.swiper-pagination-bullet{
+  background-color: gray
+ 
+}
+.swiper-pagination-bullet-active{
+  background-color: transparent;
+  border: 3px solid gray;
 }

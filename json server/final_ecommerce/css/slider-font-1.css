@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'DM Serif Display';
+    src: url('../font/slider-font-1/DMSerifDisplay-Regular.woff2') format('woff2'),
+        url('../font/slider-font-1/DMSerifDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Serif Display';
+    src: url('../font/slider-font-1/DMSerifDisplay-Italic.woff2') format('woff2'),
+        url('../font/slider-font-1/DMSerifDisplay-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

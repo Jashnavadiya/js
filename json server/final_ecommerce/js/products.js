@@ -85,10 +85,21 @@ document.querySelector('.cata-head1 p').addEventListener('click', () => {
     document.querySelector('.cata-head1 p i').classList.toggle('bi-chevron-up')
     document.querySelector('.cata-memberr1').classList.toggle('cata_memeber_hide');
 })
-
+const sorting=async(hiii)=>{
+    console.log(hiii);
+    let res= await GetData(`http://localhost:3000/products/?cata=${hiii}`)
+    let dataas= await res
+   console.log(dataas);
+   display(dataas)
+}
 const get=async()=>{
     let res=await GetData("http://localhost:3000/products")
-    display(res)
-    document.getElementById('Sorting_tech').addEventListener('submit',()=>sorting())
+    document.getElementById('Sorting_tech').addEventListener('click',()=>sorting("tech"))
+    document.getElementById('Sorting_fashion').addEventListener('click',()=>sorting("Fashion"))
+    document.getElementById('Sorting_home_appliance').addEventListener('click',()=>sorting("Home_appliance"))
+    let data=JSON.parse(sessionStorage.getItem('Searh'))||res;
+    display(data)
+    sessionStorage.setItem('Search',JSON.stringify());
 }
+
 get()
