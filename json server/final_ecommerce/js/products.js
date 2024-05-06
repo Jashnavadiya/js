@@ -65,9 +65,18 @@ document.querySelector('.icon_Filter').addEventListener('click', () => {
     document.querySelector('.main-card-body').classList.toggle('main_card_show');
     document.querySelector('.sidebar_main').classList.toggle('sidebar_hide');
 })
-const sortingprice = (hii) => {
-    let hi = products.filter((ele) => ele.cata == hii)
-    if (hii == "All") hi = products;
+const sortingprice = async (hii) => {
+
+    console.log(hii);
+    let res = await GetData(`http://localhost:3000/products`)
+    let products = await res;
+    let hi ;
+    if (hii == "lth") {
+        hi=products.sort((a,b)=>a.price-b.price)
+    }
+    else{
+        hi=products.sort((a,b)=>b.price-a.price)
+    }
     display(hi);
 }
 document.querySelector('.sorting-header').addEventListener('change', () => {
@@ -97,6 +106,13 @@ const get = async () => {
     document.getElementById('Sorting_tech').addEventListener('click', () => sorting("tech"))
     document.getElementById('Sorting_fashion').addEventListener('click', () => sorting("Fashion"))
     document.getElementById('Sorting_home_appliance').addEventListener('click', () => sorting("Home_appliance"))
+    document.getElementById('htl').addEventListener('change',()=>{
+        document.getElementById('lth').checked=false
+        sortingprice('htl')}
+)
+    document.getElementById('lth').addEventListener('change',()=>{
+        document.getElementById('htl').checked=false
+        sortingprice('lth')})
     let data = JSON.parse(sessionStorage.getItem('Search')) || res;
     console.log(data);
     display(data)
