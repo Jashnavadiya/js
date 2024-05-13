@@ -85,46 +85,10 @@
         </nav>
     </div>
     <div class="sasta-nav">
-        <div><a class="admin-add active-page" href="../pages/add.html">Add Product</a> <a class="admin-Show" href="../pages/adminproducts.html">Products</a></div>
+        <div><a class="admin-add" href="../pages/add.html">Add Product</a> <a class="admin-Show active-page" href="../pages/adminproducts.html">Products</a></div>
     </div>
     <div class="main-body">
-        <h2 id="main_header_of_add">Add Products</h2><br>
-        <div class="main-add-card">
-            <form method="post" enctype='multipart/form-data' class="add-card form-floating">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control " id="title" placeholder="helo" required>
-                    <label for="floatingInput">Name of product</label>
-                </div>
-                <div class="form-floating">
-                    <input type="number" class="form-control floatingPassword " id="price" placeholder="Password"
-                        required>
-                    <label for="floatingPassword">Price of Product</label>
-                </div>
-                <br>
-                <div class="form-floating">
-                    <textarea class="form-control floatingTextarea2" placeholder="Leave a comment here" id="desc"
-                        style="height: 100px" required></textarea>
-                    <label for="floatingTextarea2">Description</label>
-                </div><br>
-                <div class="col-md">
-                    <div class="form-floating">
-                        <select class="form-select floatingSelectGrid" id="cata" required>
-                            <option selected hidden value="0">Open this select menu</option>
-                            <option value="Technology">Technology</option>
-                            <option value="Fashion">Fashion</option>
-                            <option value="Home_appliance">Home appliance</option>
-                        </select><label for="floatingSelectGrid">category of product</label>
-                    </div>
-                </div>
-                <br>
 
-                <div type="url" class="form-floating imgs-drop">
-                    <input class="form-control floatingin4" id="img" type="file" multiple><label for="floatingin4"
-                        required>Images Of Product</label>
-                </div><br>
-                <input id="add_btn" type="submit" value="ADD PRODUCT">
-            </form>
-        </div>
     </div>
     <img src="" alt="" id="hi11">
     <div class="main-logout">
@@ -143,7 +107,7 @@
 </body>
 <script src="../js/loader.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script src="../js/add.js" type="module"></script>
+<script src="../js/adminproduct.js" type="module"></script>
 <script src="../js/header.js" type="module"></script>
 
 
