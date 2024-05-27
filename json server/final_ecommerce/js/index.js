@@ -111,7 +111,7 @@ const ui7=()=>{
       elements.forEach(el => {
         observer.observe(el, options);
       });
-      setTimeout(ui9,3000)
+      setTimeout(ui9,1000)
 }
 const ui8=()=>{ 
     const startAnimation = (entries, observer) => {
@@ -127,9 +127,9 @@ const ui8=()=>{
       elements.forEach(el => {
         observer.observe(el, options);
       });
-      setTimeout(ui7,3000)
+      setTimeout(ui7,1000)
 }
-ui8()
+setTimeout(ui8,2000)
 const ui9=()=>{ 
     const startAnimation = (entries, observer) => {
         entries.forEach(entry => {
