@@ -24,18 +24,19 @@ label{
     position: relative;
 }
 
-.main-sidebar{
+.mainn-sidebar{
     width: 35%;
     height: 100vh;
     position: absolute;
     overflow: auto;
     right: 0;
     border-left: 3px solid #9E6CD6;
+    background-color: #516374;
 }
 .main_div{
     position: absolute;
     width: 70%;
-    transform: translate(30%,70%);
+    transform: translate(30%,30%);
 }
 .sub_div{
     display: flex;
@@ -68,7 +69,8 @@ label{
   .radio-input {
     display: flex;
     min-width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
   
   .radio-input .label {
@@ -122,4 +124,27 @@ label{
     color: white;
     border-bottom: 1px solid #9E6CD6;
     padding: 15px 10px;
+    
+}
+#side_qus1{
+    color: white;
+    border-bottom: 1px solid #9E6CD6;
+    padding: 15px 10px;
+    
+}
+.addded{
+    background-color: #3E4B58;
+}
+#submit_div{
+    width:94%;
+    margin: 10px 3%;
+}
+.trues{
+    background-color: green;
+}
+.false{
+    background-color: lightcoral;
+}
+.hid{
+    display: none;
 }
