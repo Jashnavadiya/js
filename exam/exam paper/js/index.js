@@ -173,6 +173,7 @@ const sasta_ui = (alData, index) => {
     document.getElementById('d').checked = false;
     let the_selcted_option=alData[index].Select.toLowerCase()
     document.getElementById(`${the_selcted_option}`).checked = true;
+    // document.getElementById(`${the_selcted_option}_option_content`).classList.add('gray');
     console.log(the_selcted_option);
     }
 

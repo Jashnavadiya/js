@@ -8,29 +8,37 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form>
+    <form id="form">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"></label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="exampleInputEmail1" class="form-label">Qustion Here</label>
+          <input type="text" class="form-control" required id="qus" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="text" class="form-control" id="exampleInputPassword1">
+          <label for="exampleInputPassword1" class="form-label">Option a</label>
+          <input type="text" class="form-control" id="a" required>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="text" class="form-control" id="exampleInputPassword1">
+          <label for="exampleInputPassword1" class="form-label">Option B</label>
+          <input type="text" class="form-control" id="b" required>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="text" class="form-control" id="exampleInputPassword1">
+          <label for="exampleInputPassword1" class="form-label">Option c</label>
+          <input type="text" class="form-control" id="c" required>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="text" class="form-control" id="exampleInputPassword1">
+          <label for="exampleInputPassword1" class="form-label">option d</label>
+          <input type="text" class="form-control" id="d" required>
         </div>
+        <select name="" id="ans" required>
+          <option value="" hidden> Select right answer</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+        </select>
         
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
 </body>
+<script src="../js/add.js"></script>
 </html>

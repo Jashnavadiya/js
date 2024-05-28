@@ -10,7 +10,7 @@
       },
       "correct": "C",
       "id": "06a5",
-      "Select": "A"
+      "Select": "C"
     },
     {
       "question": "Which of the following is not a reserved word in JavaScript?",
@@ -215,6 +215,17 @@
       "correct": "A",
       "id": "ff2d",
       "Select": "C"
+    },
+    {
+      "id": "138f",
+      "question": "a",
+      "options": {
+        "A": "s",
+        "B": "a",
+        "C": "a",
+        "D": "a"
+      },
+      "correct": "A"
     }
   ]
 }

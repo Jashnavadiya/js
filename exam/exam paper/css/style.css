@@ -45,7 +45,6 @@ label{
     justify-content: space-around;
 }
 .sub_div div{
-    width: 48%;
     box-shadow: #9E6CD6;
     padding: 10px 5px;
     margin: 10px 0;
@@ -101,9 +100,18 @@ label{
      inset -1px -1px 4px rgba(255, 255, 255, 0.5);
     transform: scale(1.1);
   }
+  
+ .label {
+    
+    color: lightgray;
+ }
   .a,.b,.c,.d{
     width: 100%;
     cursor: pointer;
+  }
+  .sub_div div div {
+    width: 100%;
+    color: lightgray;
   }
 
   /**----------------------------------*/
@@ -144,6 +152,9 @@ label{
 }
 .false{
     background-color: lightcoral;
+}
+.gray{
+    color: gray;
 }
 .hid{
     display: none;
